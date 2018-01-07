@@ -1,13 +1,13 @@
 /*
 Theme Name: Responsive Child
 Template: responsive
-Author: Gerard greenidge
-Version: 1.5
-Updated: 2017-02-18
+Author: Gerard Greenidge
+Version: 1.6
+Updated: 2017-12-31
 */
-@charset "UTF-8";
+
 @import url('../responsive/style.css');
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300);
 
 body{
 	width:100%;
@@ -29,7 +29,7 @@ text-rendering: optimizeLegibility;
 
 a {
 color: #09a9cb;
-font-weight: 400;
+font-weight: inherit;
 text-decoration: underline;
 }
 a:hover {
@@ -61,6 +61,20 @@ text-decoration: underline;
     color: #fff;
 }
 
+.header-emergency-phone {
+    font-size: .85em;
+    padding: 10px;
+    color: #555;
+    border-bottom: 1px solid #bbb;
+    -webkit-box-shadow: inset 0px -10px 25px -15px rgba(51,51,51,1);
+    -moz-box-shadow: inset 0px -10px 25px -15px rgba(51,51,51,1);
+    box-shadow: inset 0px -10px 25px -15px rgba(51,51,51,1);
+}
+.header-emergency-phone img {
+    margin: 3px 7px 3px 0;
+}
+
+
 .skip-container #colophon-widget .widget-wrapper p.announcement-line1 {
     font-weight: 800;
     padding: 16px 0 0 0;
@@ -79,16 +93,20 @@ text-decoration: underline;
 }
 
 .skip-container #colophon-widget .widget-wrapper a {
-    background-color: #00BCE4; /* TMHI */
-    /*background-color: #f26531; Rocktoberfest*/
+    background-color: #fcaf17;  /*Gold background */
+    /*background-color: #00BCE4; Blue background*/
+    /*background-color: #f26531;*/
     text-decoration: none;
     display:block;
-    color:#fff;
+padding: 0 25px;
+    color:#fff; /* White font color */
+    /*color: #333333;*/
 }
 
 .skip-container #colophon-widget .widget-wrapper a:hover {
-   background-color: #FCAF17; /*TMHI*/
-   text-decoration: none;
+    /*background-color: #FCAF17; Gold hover color */
+    background-color: #00BCE4; /*Blue hover color */
+    text-decoration: none;
 }
 
 .powered {
@@ -129,6 +147,12 @@ position: relative;
 .video_wrapper {
 clear: none; float: left;
 }
+
+small.email {
+    text-transform: lowercase;
+    font-weight: normal;
+}
+
 /* Headings */
 
 
@@ -153,10 +177,10 @@ margin-bottom: .5em;
 margin-top: .75em;
 }
 
-body.page-template-the-center-sidebar-php h2, body.page-template-the-center-no-sidebar-php h2 { 
+/*body.page-template-the-center-sidebar-php h2, body.page-template-the-center-no-sidebar-php h2 { 
 color: #F26631;
 
-}
+}*/
 
 h3 {
 font-size: 1.175em;
@@ -321,33 +345,21 @@ background: #c2cf21;
 }
 
 .top-menu li a { /*IS THIS BEING USED? CAN WE REMOVE?/*
-
 	*border-left: 1px solid #333333;*
-
 	color: #ffffff;
-	
 	font-size:12pt;
-
 	/*font-size: 1.17em; -  Will play with this later*/
-
 	padding: 0 4px 0 8px;
-
 }
-
 
 
 .top-menu > li:first-child > a {
-
 	border-left: none;
-
 }
 
 
-
 .top-menu li a:hover {
-
 	color: #f26531;
-
 }
 
 
@@ -355,6 +367,54 @@ background: #c2cf21;
 	margin-left:125px;
 }
 
+/*Other Buttons*/
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857;
+    border-radius: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+a.btn {
+	text-decoration: none;
+}
+.btn-blue {
+    background-color: #00bce4;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 0;
+    transition: .3s all;
+    border: 0;
+}
+a:hover.btn.btn-blue {
+	 background-color: #fcaf17;
+	color: #fff;
+}
+.btn-gold {
+    background-color: #fcaf17;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 0;
+    transition: .3s all;
+    border: 0;
+}
+a:hover.btn.btn-gold {
+	 background-color: #00bce4;
+	color: #fff;
+}
 /* HomePage Styles
 --------------------------------------------------------------*/
 
@@ -371,7 +431,6 @@ background: #c2cf21;
 	float: left;
 	padding-bottom: 25px;
 }
-
 
 
 .circle_adhd, .circle_adhd_hover, .circle_learning_differences, .circle_learning_differences_hover, .circle_autism, .circle_autism_hover, .circle_anxiety_depression, .circle_anxiety_depression_hover{
@@ -561,7 +620,7 @@ float: left;
 }
 
 div.secondary_menu {
-max-width: 1120px;
+max-width: 1200px;
 margin: auto;
 padding-top: 5px;
 }
@@ -890,6 +949,14 @@ margin-left: 8px;
 	background-color:#fff;
 }
 
+/* HELP IS HERE PAGE */
+body.page-template-get-help-landing .hentry {
+    clear: both;
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+}
+
 /* Teen Mental Health Initiative (TMHI) Menu
 
 -------------------------------------------------------------- */
@@ -1051,12 +1118,6 @@ text-decoration: none;
     margin-bottom: 25px;
 }
 
-#community-education-list a:hover
-{
-color: #fff;
-background-color: #958d7a;
-text-decoration: none;
-}
 #community-education-list li.parent-classes a:link {
     background-color: #f26531;
 }
@@ -1068,6 +1129,13 @@ text-decoration: none;
 }
 #community-education-list li.continuing-education-classes a:link {
     background-color: #fcaf17;
+}
+
+#community-education-list li.parent-classes a:hover, #community-education-list li.teacher-classes a:hover, #community-education-list li.teen-classes a:hover, #community-education-list li.continuing-education-classes a:hover
+{
+color: #fff;
+background-color: #958d7a;
+text-decoration: none;
 }
 
 .page-template-parent-ed a.view-as-grid, .page-template-community-education a.view-as-grid {
@@ -1088,6 +1156,181 @@ body.page-template-parent-ed #calendar-list-view .future-event p {
     margin-top: 0;
 }
 
+/* EXECUTIVE FUNCTION BOOTCAMP SECTION
+-------------------------------------------------------------- */
+body.page-template-the-center-sidebar-php h2, body.page-template-the-center-no-sidebar-php h2 { 
+    font-weight: 300;
+    font-size: 48px;
+}
+
+div.ef-bootcamp {
+    margin: auto;
+    text-align: center;
+    color:#333;
+}
+.ef-bootcamp p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    font-weight: 300;
+    
+}
+.ef-bootcamp .bigheader {
+    color: #fff;
+    margin-top: 20px;
+}
+.goldboxwide {
+    background: #FCAF17;
+padding:10px 0;
+}
+.grayboxwide {
+    background: #958d7a;
+    color: #fff;
+padding:10px 0;
+}
+.lightgrayboxwide {
+    background: #ccc2b6;
+    color: #fff;
+padding:10px 0;
+}
+.redboxwide {
+    background: #f26531;
+    color: #fff;
+padding:10px 0;
+}
+.ef-bootcamp .redboxwide, .ef-bootcamp .grayboxwide {
+    color: #fff !important;
+}
+.ef-group1 {
+    float: left;
+    border: 1px solid #958d7a;
+   /* max-width: 420px;*/
+  
+}
+.ef-bootcamp.ef-group1 {
+    margin: 5px;
+min-height: 475px;
+}
+.ef-bootcamp.ef-group1 h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    background: #958d7a;
+    color: #fff;
+    padding: 25px;
+    margin-top: 0;
+}
+
+.ef-group2 {
+    float: left;
+    border: 1px solid #f26531;
+    /*max-width: 420px;*/
+  }
+.ef-bootcamp.ef-group2 {
+    margin: 5px;
+min-height: 475px;
+}
+.ef-bootcamp.ef-group2 h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    background: #f26531;
+    color: #fff;
+    padding: 25px;
+    margin-top: 0;
+}
+
+.bottomarrow-red {
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 34px 34px 0 34px;
+    border-color: #f26531 transparent transparent transparent;
+}
+
+
+/* CAREERS SECTION
+-------------------------------------------------------------- */
+
+body.page-template-careers-no-sidebar h2 {
+    font-weight: 300;
+    font-size: 36px;
+}
+
+body.page-template-careers-no-sidebar hr {
+    background: #eeeeee;
+    height: 2px;
+    margin: 35px 0;
+}
+
+.bluebutton-905 a {
+    clear: both;
+    display: block;
+    margin: auto;
+    max-width: 905px;
+    background: #00BCE4;
+    padding: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.bluebutton a {
+    clear: both;
+    display: block;
+    margin: auto;
+    background: #00BCE4;
+    padding: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.bluebutton a:hover, .bluebutton-905 a:hover {
+    background: #fcaf17;
+}
+
+table.careers_featured_table {
+    border: 0 !important;
+}
+.careers_featured_table th {
+    font-weight: 400;
+    background: #fff;
+    text-align: left;
+    border: 0;
+}
+.careers_featured_table tr {
+    border-bottom: 2px solid #eeeeee !important;
+}
+.careers_featured_table td {
+    border: 0 !important;
+}
+
+table.careers_all_table {
+    border: 0 !important;
+}
+.careers_all_table th {
+    font-weight: 400;
+    background: #eee;
+    text-align: left;
+    border: 0;
+}
+.careers_all_table tr {
+    border-bottom: 2px solid #eeeeee !important;
+}
+.careers_all_table td {
+    border: 0 !important;
+}
+
+.careers-eoe-footer {
+    color: #999;
+    font-size: 15px;
+    text-align: left;
+    clear: both;
+}
+
 
 
 /* CHC Breakfast
@@ -1095,9 +1338,9 @@ body.page-template-parent-ed #calendar-list-view .future-event p {
 -------------------------------------------------------------- */
 
 body.page-template-chc-breakfast-nosidebar .hentry {
-    width: 90%;
-    margin: auto;
-    margin-left: 5%;
+    width: 100%;
+    margin: auto 0;
+    margin-left: 0;
     clear: both;
 }
 
@@ -1282,7 +1525,7 @@ margin-left: 20px;
 }
 
 body.page-template-full-width-page-php .hentry {
-width: 97%;
+width: 100%;
 }
 
 .post-entry {
@@ -1292,7 +1535,7 @@ clear: both;
 body.page-template-full-width-page-php .post-entry {
 clear: none;
 float: left;
-margin-left: 138px;
+/*margin-left: 138px;*/
 }
 
 
@@ -1977,10 +2220,14 @@ padding: 5px 20px;
 color: #f26531;
 }
 
+.copyright p {
+    line-height: 18px;
+}
+
 .testimonial {
 padding: 1em;
 padding-left: 70px;
-background: transparent url(http://www.chconline.org/wp-content/uploads/2014/08/quote_bkg.png) no-repeat;
+background: transparent url('/wp-content/uploads/2014/08/quote_bkg.png') no-repeat;
 background-color: #edece9;
 border-left: none;
 -webkit-border-radius: 6px;
@@ -2451,9 +2698,11 @@ padding: 20px 10px 10px 10px;
 border-bottom: 1px solid #edece9;
 text-align: center;
 }
-.directory_3col h2, .directory_3col_right h2 {
+
+body .directory_3col h2, body .directory_3col_right h2 {
 font-size: 18px;
 }
+
 ul.azlist {
 margin: 0;
 padding: 0;
@@ -2550,7 +2799,7 @@ font-weight: 400;
 }
 
 /*div#gform_wrapper_12 {
-background: #fff url('http://beta.chconline.org/assets/waystohelp_hero.jpg') top right no-repeat;
+background: #fff url('/assets/waystohelp_hero.jpg') top right no-repeat;
 }*/
 
 input#gform_submit_button_12, input#gform_submit_button_13 {
@@ -2828,7 +3077,7 @@ body.single-format-standard img.wp-post-image {
 	text-align: center;
 	font-weight: bold;
 	padding: 5px;
-	background-image: url("http://www.chconline.org/assets/calendar/tilebottom_blue.png");
+	background-image: url('/assets/calendar/tilebottom_blue.png');
 }
 
 .cat-event_title {
@@ -2869,6 +3118,7 @@ h2.event-title img.category-icon {
 .cal-details-leftcol {  /*KD 12-16-16*/
   width: 225px;
   float: left;
+ margin-right: 25px !important;
 }
 
 .mc-main .details li {
@@ -2894,12 +3144,17 @@ h2.event-title img.category-icon {
     padding: 0;
 }
 
-.community-ed-class-grid ul.upcoming-events li.future-event {
+.community-ed-class-grid ul.upcoming-events li.future-event, .community-ed-class-grid ul.upcoming-events li.today {
     float: left;
     max-width: 30%;
-    margin-right: 25px;
+    margin-right: 20px;
     list-style-type: none;
-    min-height:500px;
+    min-height: 500px;
+    /*border-left: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+    padding: 0;
+    margin-bottom: -5px;*/
 }
 
 .community-ed-class-grid img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
@@ -2949,7 +3204,7 @@ div#cse td {
 }
 
 .teen_therapy_head{
-    background-image: url("http://www.chconline.org/wp-content/uploads/2016/12/TeenTherapy-header2016.jpg");    
+    background-image: url("/wp-content/uploads/2016/12/TeenTherapy-header2016.jpg");    
     height: 340px;
     width: 100%;
     background-repeat: no-repeat;
@@ -2983,14 +3238,14 @@ div#cse td {
 
 body.page-template-the-center-no-sidebar-php .bg_blue_box h2 {
     color: #fff;
-    margin 0 auto;
+    margin: 0 auto;
     font-weight: 900;
     font-size: 3em;
     margin: 10px 40px;
 }
 
 body.page-template-the-center-no-sidebar-php .bg_blue_box ul{
-    margin 0 auto;
+    margin: 0 auto;
     color: #fff;
     list-style-type: none;
     margin: 0 40px
@@ -3016,6 +3271,561 @@ body.page-template-the-center-no-sidebar-php .bg_blue_box ul a:visited{
     color:inherit !important;
 }
 
+/*SPEAK MINDFULLY*/
+
+.speakmindfully-leadwitharrow{
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#79d5eb+0,00bce4+100 */
+background: #79d5eb; /* Old browsers */
+background: -moz-linear-gradient(top, #79d5eb 0%, #00bce4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #79d5eb 0%,#00bce4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #79d5eb 0%,#00bce4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79d5eb', endColorstr='#00bce4',GradientType=0 ); /* IE6-9 */
+text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    color: #fff;
+    font-size: 26px;
+    border-top:5px solid #00BBE3;
+    padding:25px;
+}
+
+.speakmindfully-redbox{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f26531+0,f9c2b2+100 */
+background: #f26531; /* Old browsers */
+background: -moz-linear-gradient(top, #f26531 0%, #f9c2b2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f26531 0%,#f9c2b2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f26531 0%,#f9c2b2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f26531', endColorstr='#f9c2b2',GradientType=0 ); /* IE6-9 */
+    padding:25px;
+    padding-bottom: 120px;
+    color: #fff;
+}
+
+.speakmindfully-redbox .gform_wrapper {
+    margin: 16px 0;
+    max-width: 71%;
+    float: left;
+}
+
+.speakmindfully-redbox h3 {
+    font-size: 48px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.speakmindfully-redbox .gform_wrapper .field_description_below .gfield_description {
+    padding-top: 0;
+    line-height: 20px;
+    font-size:16px;
+}
+
+.speakmindfully-redbox .gform_wrapper .gform_body {
+    margin-bottom: 0;
+}
+
+.speakmindfully-redbox .gform_wrapper .gform_footer {
+    padding: 20px 0px;
+    margin: -60px 0;
+    clear: both;
+    width: 100%;
+}
+
+.speakmindfully-redbox input#gform_submit_button_55 {
+    background: #f26531;
+    color: white;
+    border: none;
+    font-weight: 300;
+    padding: 10px 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    border-radius: 0;
+}
+
+.pledge-checkbox input#choice_55_5_1 {
+    margin-top: -55px;
+}
+
+.speakmindfully-redbox label#label_55_5_1 {
+    font-size: 18px;
+}
+
+.speakmindfully-redbox .gform_wrapper .top_label #field_55_5 .gfield_label {
+    display: none;
+}
+
+.speakmindfully-redbox input#input_55_6_3, .speakmindfully-redbox input#input_55_6_6, .speakmindfully-redbox input#input_55_3, .speakmindfully-redbox input#input_55_4 {
+    background-color: white;
+}
+
+.speakmindfully-redbox .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label {
+    font-size: 16px;
+}
+
+.speakmindfully-aboutus ul {
+    margin-left: 300px;
+}
+
+.speakmindfully-spreadtheword {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.speakmindfully-spreadtheword .row2-left-poster {
+    clear: left;
+    margin-left: 150px;
+}
+
+.speakmindfully-spreadtheword .row2-right-poster {
+    clear: right;
+    float: left;
+}
+
+.speakmindfully-why a img.alignnone {
+    margin: 0 0 10px 0;
+}
+
+.speakmindfully-spreadtheword a img.alignnone {
+    margin: 5px 10px 10px 0;
+}
+
+.speakmindfully-why {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.speakmindfully-how img.alignleft.size-full {
+    padding-left: 20px;
+    margin: 0;
+}
+
+p.chc-red, h3.chc-red, .chc-red  {
+    color: #F06531;
+}
+
+/***** Support CHC *****/
+
+/* Kill the margin to accommodate the wide yellow band*/
+.chcsupport.heroimage {
+    background: url(/wp-content/uploads/2017/07/hero-80.jpg);
+    max-width: 946px;
+    margin: 0 auto;
+    min-height: 441px;
+}
+
+.chcsupport.heroimage h2 {
+    font-size: 51px;
+    color: #fff;
+    max-width: 300px;
+    font-weight: 800;
+    padding: 75px 0 0 75px;
+    margin:0;
+    line-height: 60px;
+}
+
+.chcsupport.heroimage h3 {
+    color: #fff;
+    max-width: 400px;
+    font-size: 36px;
+    margin: 0;
+    padding: 0 0 0 80px;
+}
+
+.page-template-support-no-sidebar div#wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+    padding:0;
+}
+
+.supportchc .bigheader {
+    max-width: 950px;
+    margin: 0 auto;
+    font-size: 51px;
+}
+
+h2.supportchc.clear.center.light {
+    font-size: 48px;
+    font-weight: 300;
+    color: #555555;
+    padding: 40px 0;
+    margin: 0;
+}
+
+.supportchc h3 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #555555;
+}
+
+p.center.supportchc.quote {
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 300;
+    font-family: 'Open Sans';
+    margin: 20px auto;
+    max-width: 850px;
+    padding: 0 20px;
+}
+
+li.grey-border-button.button-226x60.center, li.chcyellow-button.button-226x60.center, li.chcblue-button.button-226x60.center, li.lightgrey-border-button.button-226x60.center, li.lightgrey-border-button.button-180x60.center, li.chcyellow-button.button-180x60.center, li.chcblue-button.button-180x60.center, li.lightgrey-border-button.button-180x84.center, li.chcyellow-button.button-180x84.center, li.chcblue-button.button-180x84.center, li.lightgrey-border-button.button-190x84.center, li.chcyellow-button.button-190x84.center, li.chcblue-button.button-190x84.center, li.lightgrey-border-button.button-190x60.center, li.chcyellow-button.button-190x60.center, li.chcblue-button.button-190x60.center  {
+    list-style: none;
+    float: left;
+    margin: 5px 5px;
+}
+
+ul.supportchc.buttons {
+    max-width: 1000px;
+    margin: 20px auto;
+    clear: both;
+    display: block;
+    padding: 0;
+    list-style-type: none;
+    list-style: none;
+}
+
+.supportchc .photo-content-photo-box .content {
+    float: left;
+    margin: 0 105px;
+}
+
+.photo-content-photo-box .image {
+    float: left;
+}
+
+.supportchc .fundingpriorities {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.supportchc .content-photo-box {
+    max-width: 478px;
+    padding: 0;
+    margin: 20px 10px;
+    border: 1px solid #CCC2B6;
+	min-height: 360px;
+}
+
+.supportchc .afcontent-photo-box {
+    max-width: 980px;
+    padding: 0;
+    margin: 20px auto;
+    border: 1px solid #CCC2B6;
+}
+
+.content-photo-box .content, .afcontent-photo-box .content {
+    max-width: 50%;
+    float: left;
+}
+
+.content-photo-box .image, .afcontent-photo-box .image  {
+    max-width: 50%;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.supportchc .content-photo-box p, .supportchc .afcontent-photo-box p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding: 0 5px;
+}
+
+.supportchc .chcbreakfast, .supportchc .rocktoberfest {
+    max-width: 275px;
+    border: 1px solid #CCC2B6;
+    margin: 0 10px 40px 10px;
+    float: left;
+}
+
+.supportchc .chcbreakfast p, .supportchc .rocktoberfest p {
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.supportchc .chcbreakfast img, .supportchc .rocktoberfest img {
+    margin:0;
+}
+.supportchc .transparent-button a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #fff;
+}
+
+.supportchc .transparent-button a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.supportchc .grey-border-button a {
+    color: #555555;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #555555;
+}
+
+.supportchc .grey-border-button a:hover {
+    color: #fff;
+    background-color: #555555;
+}
+
+.supportchc .lightgrey-border-button a {
+    color: #555555;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #CCC2B6;
+}
+
+.supportchc .lightgrey-border-button a:hover {
+    color: #fff;
+    background-color: #CCC2B6;
+}
+
+
+.supportchc .lightgrey-button a {
+    background-color: #CCC2B6;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #CCC2B6;
+}
+
+.supportchc .lightgrey-button a:hover {
+    color: #CCC2B6;
+    background-color: #fff;
+}
+
+.supportchc .chcyellow-button a {
+    background-color: #FCAF17;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #FCAF17;
+}
+
+.supportchc .chcyellow-button a:hover {
+    color: #FCAF17;
+    background-color: #fff;
+}
+
+.supportchc .chcblue-button a {
+    background-color: #00bce4;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #00bce4;
+}
+
+.supportchc .chcblue-button a:hover {
+    color: #00bce4;
+    background-color: #fff;
+}
+
+.supportchc .fundraising-events {
+    margin: 20px auto;
+    max-width: 895px;
+}
+
+.supportchc .sharestory, .supportchc .adbvancementteam{
+    margin: 40px auto 0 auto;
+    max-width: 650px;
+}
+
+.supportchc .sharestory p, .supportchc .sharestory p, .supportchc .subtext{
+    font-size:15px;
+}
+
+.supportchc .goldboxwide h3{
+    color:#fff;
+}
+
+.supportchc .subtext{
+    font-size:15px;
+}
+
+.supportchc .goldboxwide .subtext{
+    color:#fff;
+}
+
+.button-177x39{
+    width: 177px;
+    margin: 20px auto;
+}
+
+.button-177x39 a{
+    display: block;
+    font-weight: 700;
+    padding: 6px 3px;
+    font-size: 16px;
+}
+
+.button-179x40{
+    width: 179px;
+    margin: 20px auto;
+}
+
+.button-179x40 a{
+    display: block;
+    font-weight: 700;
+    padding: 7px 3px;
+    font-size: 16px;
+}
+
+.button-180x60{
+    width: 180px;
+    margin: 20px auto;
+}
+
+.button-180x60 a{
+    display: block;
+    font-weight: 700;
+    padding: 17px 3px;
+    font-size: 15px;
+}
+
+.button-180x84{
+    width: 180px;
+    margin: 20px auto;
+}
+
+.button-180x84 a {
+    display: block;
+    font-weight: 700;
+    padding: 29px 3px;
+    font-size: 15px;
+}
+
+.button-190x60{
+    width: 190px;
+    margin: 20px auto;
+}
+
+.button-190x60 a{
+    display: block;
+    font-weight: 700;
+    padding: 17px 3px;
+    font-size: 15px;
+}
+
+.button-190x84{
+    width: 190px;
+    margin: 20px auto;
+}
+
+.button-190x84 a {
+    display: block;
+    font-weight: 700;
+    padding: 29px 3px;
+    font-size: 15px;
+}
+
+.button-226x60{
+    width: 226px;
+    margin: 20px auto;
+}
+
+.button-226x60 a{
+    display: block;
+    font-weight: 700;
+    padding: 17px 3px;
+    font-size: 16px;
+}
+
+.supportchc #content-full {
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.post-edit{
+    display:none;
+}
+
+.admin-bar .post-edit {
+    clear: both;
+    display: block;
+    font-size: 12px;
+    margin: 1.5em 0;
+}
+
+.supportchc .program {
+    margin: 20px auto;
+    max-width:900px;
+    border: 2px solid #CCC2B6;
+    padding: 20px;
+    min-height: 220px;
+}
+
+.supportchc.tmhiprogram {
+    max-width: 900px;
+    margin: 20px auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(204, 194, 182);
+    border-image: initial;
+    padding: 20px;
+    min-height: 255px;
+}
+
+.supportchc .afprogram {
+    margin: 20px auto;
+    max-width: 900px;
+    border: 2px solid #FCAF17;
+    padding: 20px;
+    min-height: 220px;
+}
+
+.supportchc .introtext{
+   margin: 20px auto;
+   max-width:945px;
+}
+
+.supportchc .afprogram .button-177x39, .supportchc .program .button-177x39, .supportchc .tmhiprogram .button-177x39 {
+    width: 177px;
+    margin: 20px 0;
+}
+
+.supportchc .program .col-460, .supportchc .afprogram .col-460, .supportchc .tmhiprogram .col-460 {
+    font-size: 14px;
+}
+
+.afprogram .col-460 p, .program .col-460 p, .tmhiprogram .col-460 p {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.supportchc.content-photo-box.center.clear.ebcprogram {
+    margin: 20px auto;
+}
+
+/***** End Support CHC ****/
+
+.button-375 {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    border-color: #fcb017;
+    width: 375px;
+    height: 85px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-style: solid;
+    border-width: 0px;
+    background-color: rgba(252, 176, 23, 1);
+    -webkit-box-shadow: 0px 0px 2px 0px #fff;
+    -moz-box-shadow: 0px 0px 2px 0px #fff;
+    box-shadow: 0px 0px 2px 0px #fff;
+}
+
+.button-375:hover {
+    border-color: #c1ce2f;
+    background-color: rgba(193, 206, 47, 1);
+    -webkit-box-shadow: 0px 0px 2px 0px #fff;
+    -moz-box-shadow: 0px 0px 2px 0px #fff;
+    box-shadow: 0px 0px 2px 0px #fff;
+}
 
 /*MOBILE LAYOUT*/
 
@@ -3110,12 +3920,25 @@ text-align:center;
 img.hero { /*FOR SERVICES PAGES; SPECIALITIES; LANDING PAGES WHERE THE TOP IMAGE DROPS TOO LOW*/
     margin-top:0;
 }
-img.alignright, img.alignleft {
+/*img.alignright, img.alignleft {
 clear:both;
 float:none;
 margin-right:0;
 margin:auto 0;
 text-align: center;
+}*/
+
+img.alignright, img.alignleft {
+    clear: both;
+    float: none;
+    margin-right: 0;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    display: block;
+}
+
+.col-60, .col-140, .col-220, .col-300, .col-380, .col-460, .col-540, .col-620, .col-700, .col-780, .col-860 {
+width: 100%;
 }
 
 .tagline {
@@ -3459,6 +4282,64 @@ body.page-template-community-education-nosidebar-page .col-460 {
     width: 100%;
 }
 
+/* CAREERS SECTION MOBILE 960px
+-------------------------------------------------------------- */
+
+.hide_mobile {
+    display:none;
+}
+.bluebutton-905 a {
+    max-width: 429px;
+}
+
+/** Speak Mindfully **/
+
+.speakmindfully-how img.alignleft.size-full {
+    clear: none;
+    float: left;
+    margin: 0px 15px 10px 0;
+}
+
+.speakmindfully-aboutus ul {
+    margin-left: 0;
+}
+
+.speakmindfully-spreadtheword {
+    max-width: 625px;
+}
+
+.speakmindfully-spreadtheword .row2-left-poster {
+    clear: none;
+    margin: -30px 0px 0px 0px;
+}
+
+.speakmindfully-spreadtheword .row2-right-poster {
+    clear: both;
+    margin: 0 auto;
+    float: none;
+}
+
+.speakmindfully-why {
+    margin: 0 auto;
+    max-width: 620px;
+}
+
+.speakmindfully-redbox .gform_wrapper {
+    margin: 16px 0;
+    max-width: 100%;
+    float: none;
+}
+
+img.size-full.speakmindfully-pledgehand {
+    display: none;
+}
+
+.speakmindfully-redbox {
+    padding-bottom: 25px;
+}
+
+
+
 
 }
 
@@ -3718,6 +4599,10 @@ and (orientation : landscape) {
 }
 
 @media screen and (max-width: 650px) {
+.button-177x39 {
+    width: 90%;
+}
+
 #mainnav_home {
     background: none;
     min-height: 170px;
@@ -3727,6 +4612,32 @@ img.alignright.size-full.mobile_center {
     margin: 0 80px;
     clear: both;
 }
+
+li.grey-border-button.button-226x60.center, li.chcyellow-button.button-226x60.center, li.chcblue-button.button-226x60.center, li.lightgrey-border-button.button-226x60.center, li.lightgrey-border-button.button-180x60.center, li.chcyellow-button.button-180x60.center, li.chcblue-button.button-180x60.center, li.lightgrey-border-button.button-180x84.center, li.chcyellow-button.button-180x84.center, li.chcblue-button.button-180x84.center, li.lightgrey-border-button.button-190x84.center, li.chcyellow-button.button-190x84.center, li.chcblue-button.button-190x84.center, li.lightgrey-border-button.button-190x60.center, li.chcyellow-button.button-190x60.center, li.chcblue-button.button-190x60.center  {
+    float: none;
+    margin: 10px auto;
+    width: 95%;
+}
+
+ul.supportchc.buttons {
+    max-width: 100%;
+}
+
+.content-photo-box .content, .afcontent-photo-box .content {
+    max-width: 100%;
+    float: none;
+    padding-bottom:20px;
+}
+
+.supportchc .chcbreakfast, .supportchc .rocktoberfest {
+    margin: 0 auto 40px auto;
+    float:none;
+}
+
+.content-photo-box .image, .afcontent-photo-box .image {
+    display: none;
+}
+
 
 }
 
@@ -3746,8 +4657,83 @@ body.page-template-the-center-no-sidebar-php .bg_white_box h2 {
     text-align: center;
 }
 
+/** Speak Mindfully **/
+
+.speakmindfully-redbox .gform_wrapper .field_description_below .gfield_description {
+    margin: 0px 0 60px 0;
+}
+
+.speakmindfully-spreadtheword, .speakmindfully-why {
+    max-width: 320px;
+}
+
+.speakmindfully-how img.alignleft.size-full {
+    padding-left: 10px;
+}
+
 }
 
 @media screen and (max-width: 320px) {
 
+}
+
+@media screen and (max-width: 980px) {
+/* Support CHC */
+.supportchc .chcbreakfast, .supportchc .rocktoberfest {
+    max-width: 275px;
+    border: 1px solid #CCC2B6;
+    /*margin: 0 auto 40px auto;*/
+}
+
+.supportchc .content-photo-box {
+    clear: both;
+    float: none;
+    max-width: 90%;
+}
+
+.supportchc .afcontent-photo-box {
+    max-width: 90%;
+}
+
+.supportchc.content-photo-box.center.grid {
+    margin: 0 auto;
+    float: none;
+}
+
+ul.supportchc.buttons {
+    max-width: 95%;
+}
+
+
+.photo-content-photo-box .image {
+    float: none;
+}
+
+.supportchc .photo-content-photo-box .content {
+    float: none;
+    margin: 0 auto;
+}
+
+.supportchc .introtext {
+    padding: 20px;
+}
+
+.supportchc .program .image.grid-right, .supportchc .afprogram .image.grid-right {
+    display: none;
+}
+
+.supportchc .afprogram .button-177x39, .supportchc .program .button-177x39 {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.supportchc .program .col-460, .supportchc .afprogram .col-460, .supportchc .program .icon.grid.col-220, .supportchc .afprogram .icon.grid.col-220 {
+    text-align: center;
+}
+
+.supportchc .program, .supportchc .afprogram {
+    max-width: 80%;
+}
+
+/* End Support CHC */
 }
