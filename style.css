@@ -39,24 +39,24 @@ body{
 }
 
 body {
-	-moz-font-smoothing: antialiased;
-	-webkit-font-smoothing: antialiased;
-	background: #efefef;
-	color: #555555;
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	font-smoothing: antialiased;
-	line-height: 1.5em;
-	text-rendering: optimizeLegibility;
+-moz-font-smoothing: antialiased;
+-webkit-font-smoothing: antialiased;
+background: #efefef;
+color: #555555;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-smoothing: antialiased;
+line-height: 1.5em;
+text-rendering: optimizeLegibility;
 }
 
 a {
-	color: #09a9cb;
-	font-weight: 400;
-	text-decoration: underline;
+color: #09a9cb;
+font-weight: 400;
+text-decoration: underline;
 }
 a:hover {
-	color: #F26532;
-	text-decoration: underline;
+color: #F26532;
+text-decoration: underline;
 }
 
 #container {
@@ -120,7 +120,7 @@ a:hover {
     /*background-color: #f26531;*/
     text-decoration: none;
     display:block;
-	padding: 0 25px;
+padding: 0 25px;
     color:#fff; /* White font color */
     /*color: #333333;*/
 }
@@ -147,8 +147,8 @@ a:hover {
 }
 
 #header_wrapper {
-	max-width: 1120px;
-	margin: auto;
+max-width: 1120px;
+margin: auto;
 }
 
 #wrapper{
@@ -157,17 +157,17 @@ a:hover {
 }
 
 #wrapper {
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	background-color: #ffffff;
-	border:0;
-	clear: both;
-	margin: 0 auto 20px auto;
-	padding: 0 20px 20px 20px;
-	position: relative;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+background-color: #ffffff;
+border:0;
+clear: both;
+margin: 0 auto 20px auto;
+padding: 0 20px 20px 20px;
+position: relative;
 }
 .video_wrapper {
-	clear: none; float: left;
+clear: none; float: left;
 }
 
 small.email {
@@ -190,6 +190,7 @@ h1.bigheader {
 	margin-top: .6em;
 	color: #333;
 	font-weight: 800;
+	line-height: 58px;
 }
 h2 {
 	font-size: 1.450em;
@@ -682,13 +683,13 @@ div#secondary_menu_wrapper_sandhill {
 
 div#secondary_menu_wrapper_parented {
 	margin: 0 auto;
-	background-color: #948d79;
+	background-color: #FCAF17;
 	max-width: 100%;
 	padding: 0 30px 0 30px;
 	clear: both;
 }
 .parented-menu {
-	background-color: #948d79;
+	background-color: #FCAF17;
 	min-height: 29px;
 	margin: 0 auto;
 	padding: 0;
@@ -711,7 +712,7 @@ div#secondary_menu_wrapper_parented {
 	margin-left: 128px;
 }
 .parented-menu li a:hover {
-	color: #948d79;
+	color: #FCAF17;
 	background-color:#fff;
 }
 /* ADHD, LD, ANXIETY, AUTISM (SPECIALTIES) MENUS
@@ -818,27 +819,27 @@ body.page-template-teen-mental-health-nosidebar-page .hentry {
 }
 
 body.page-template-teen-mental-health-nosidebar-page .tagline {
-	margin-left: 0;
+margin-left: 0;
 }
 
 body.page-template-teen-mental-health-sidebar-page h4 {
-	text-align:left;
+text-align:left;
 }
 
 div#secondary_menu_wrapper_tmhi {
-	margin: 0 auto;
-	background-color: #00bce4;
-	max-width: 100%;
-	padding: 0 30px 0 30px;
-	clear: both;
+margin: 0 auto;
+background-color: #00bce4;
+max-width: 100%;
+padding: 0 30px 0 30px;
+clear: both;
 }
 
 .tmhi-menu {
-	background-color: #00bce4;
-	min-height: 29px;
-	margin: 0 auto;
-	padding: 0;
-	max-width: 100%;
+background-color: #00bce4;
+min-height: 29px;
+margin: 0 auto;
+padding: 0;
+max-width: 100%;
 }
 
 .tmhi-menu li {
@@ -847,17 +848,17 @@ div#secondary_menu_wrapper_tmhi {
 }
 
 .tmhi-menu li a {
-	color: #ffffff;
-	font-size: .9em;
-	padding: 5px 8px 13px 8px;
-	font-weight: 600;
-	font-family: 'Open Sans', Arial, sans-serif;
-	text-decoration:none;
+color: #ffffff;
+font-size: .9em;
+padding: 5px 8px 13px 8px;
+font-weight: 600;
+font-family: 'Open Sans', Arial, sans-serif;
+text-decoration:none;
 }
 
 .tmhi-menu > li:first-child > a {
-	border-left: none;
-	margin-left: 0px;
+border-left: none;
+margin-left: 0px;
 }
 
 .tmhi-menu li a:hover {
@@ -876,16 +877,17 @@ body.page-template-community-education-nosidebar-page .col-460 {
 .community_education_home_content1,.community_education_home_content2, .community_education_home_content3,.community_education_home_content4 {
 	text-align:center;
 	min-height: 300px;
-}
-.community_education_home_content1 h2 a,.community_education_home_content2 h2 a, .community_education_home_content3 h2 a,.community_education_home_content4 h2 a{
+	}
+.community_education_home_content1 h2 a,.community_education_home_content2 h2 a, .community_education_home_content3 h2 a,.community_education_home_content4  h2 a{
 	text-decoration:none;
-}
+	}
 .community_education_home_content1, .community_education_home_content3 {
     border-right: 1px solid #CCC2B6;
 }
 .community_education_home_content1, .community_education_home_content2 {
     border-bottom: 1px solid #CCC2B6;
 }
+
 
 .page-template-community-education-nosidebar-page h1.bigheader {
     max-width: 950px;
@@ -916,17 +918,17 @@ body.page-template-community-education-nosidebar-page .col-460 {
 
 ul#community-education-list
 {
-	margin-left: 0;
-	padding-left: 0;
-	white-space: nowrap;
-	margin: 0;
-	padding: 0;
+margin-left: 0;
+padding-left: 0;
+white-space: nowrap;
+margin: 0;
+padding: 0;
 }
 
 #community-education-list li
 {
-	display: inline;
-	list-style-type: none;
+display: inline;
+list-style-type: none;
 }
 
 #community-education-list a {
@@ -943,9 +945,9 @@ ul#community-education-list
 
 #community-education-list a:link, #community-education-list a:visited
 {
-	color: #fff;
-	/*background-color: #f26531;*/
-	text-decoration: none;
+color: #fff;
+/*background-color: #f26531;*/
+text-decoration: none;
 }
 
 .page-template-community-education-nosidebar-page .leader {
@@ -961,9 +963,9 @@ ul#community-education-list
 
 #community-education-list a:hover
 {
-	color: #fff;
-	background-color: #958d7a;
-	text-decoration: none;
+color: #fff;
+background-color: #958d7a;
+text-decoration: none;
 }
 #community-education-list li.parent-classes a:link {
     background-color: #f26531;
@@ -1020,22 +1022,22 @@ div.ef-bootcamp {
 }
 .goldboxwide {
     background: #FCAF17;
-	padding:10px 0;
+padding:10px 0;
 }
 .grayboxwide {
     background: #958d7a;
     color: #fff;
-	padding:10px 0;
+padding:10px 0;
 }
 .lightgrayboxwide {
     background: #ccc2b6;
     color: #fff;
-	padding:10px 0;
+padding:10px 0;
 }
 .redboxwide {
     background: #f26531;
     color: #fff;
-	padding:10px 0;
+padding:10px 0;
 }
 .ef-bootcamp .redboxwide, .ef-bootcamp .grayboxwide {
     color: #fff !important;
@@ -1048,7 +1050,7 @@ div.ef-bootcamp {
 }
 .ef-bootcamp.ef-group1 {
     margin: 5px;
-	min-height: 475px;
+min-height: 475px;
 }
 .ef-bootcamp.ef-group1 h2 {
     font-size: 1.7rem;
@@ -1063,10 +1065,10 @@ div.ef-bootcamp {
     float: left;
     border: 1px solid #f26531;
     /*max-width: 420px;*/
-}
+  }
 .ef-bootcamp.ef-group2 {
     margin: 5px;
-	min-height: 475px;
+min-height: 475px;
 }
 .ef-bootcamp.ef-group2 h2 {
     font-size: 1.7rem;
@@ -1362,39 +1364,36 @@ div#sidebar_right {
 	max-width: 100%;
 }
  #sidebar_left #searchform ::-webkit-input-placeholder, #sidebar_right #searchform ::-webkit-input-placeholder {
-	color:#887E6E;
-	font-style: italic;
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-weight: 400;
-	letter-spacing: .02em;
-	line-height: 1.2em;
+color:#887E6E;
+font-style: italic;
+font-family: 'Open Sans', Arial, sans-serif;
+font-weight: 400;
+letter-spacing: .02em;
+line-height: 1.2em;
 }
-
-#sidebar_left #searchform :-moz-placeholder, #sidebar_right #searchform :-moz-placeholder {
-	color:#887E6E;
-	font-style: italic;
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-weight: 400;
-	letter-spacing: .02em;
-	line-height: 1.2em;
+ #sidebar_left #searchform :-moz-placeholder, #sidebar_right #searchform :-moz-placeholder {
+color:#887E6E;
+font-style: italic;
+font-family: 'Open Sans', Arial, sans-serif;
+font-weight: 400;
+letter-spacing: .02em;
+line-height: 1.2em;
 }
-
-#sidebar_left #searchform ::-moz-placeholder, #sidebar_right #searchform ::-moz-placeholder {
-	color:#887E6E;
-	font-style: italic;
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-weight: 400;
-	letter-spacing: .02em;
-	line-height: 1.2em;
+ #sidebar_left #searchform ::-moz-placeholder, #sidebar_right #searchform ::-moz-placeholder {
+color:#887E6E;
+font-style: italic;
+font-family: 'Open Sans', Arial, sans-serif;
+font-weight: 400;
+letter-spacing: .02em;
+line-height: 1.2em;
 }
-
-#sidebar_left #searchform :-ms-input-placeholder {
-	color: #887E6E;
-	font-style: italic;
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-weight: 400;
-	letter-spacing: .02em;
-	line-height: 1.2em;
+ #sidebar_left #searchform :-ms-input-placeholder {
+color: #887E6E;
+font-style: italic;
+font-family: 'Open Sans', Arial, sans-serif;
+font-weight: 400;
+letter-spacing: .02em;
+line-height: 1.2em;
 }
 select, input[type="text"], input[type="password"], input[type="email"] {
 	-moz-box-sizing: border-box;
@@ -1486,7 +1485,7 @@ div#sidebar_left a:hover {
 }
 
 #logo_mobile{
-	display:none;
+        display:none;
 }
 #call_help {
 	float: right;
@@ -1536,15 +1535,14 @@ div#sidebar_left a:hover {
 	text-decoration:underline;
 }
 #footer_widget {
-	/*background-color:#948d7a;*/
+/*background-color:#948d7a;*/
+	
 }
-
 #footer_wrapper, #footer_bottom_wrapper {
 	margin: 0 auto;
 	padding: 0;
 	width: 1120px;
 }
-
 #footer_widget .widget-wrapper {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -1554,13 +1552,11 @@ div#sidebar_left a:hover {
 	margin: 0px;
 	padding: 0px;
 }
-
 #footer_widget .widget-title {
 	background-color: #333333;
 	padding: 0;
 	max-height: 30px;
 }
-
 #footer_widget .widget-wrapper h3 {
 	display: block;
 	font-size: 10pt;
@@ -1570,42 +1566,34 @@ div#sidebar_left a:hover {
 	padding: 5px 0 5px 0;
 	color:#fff;
 }
-
 #footer_widget .col-300 {
 	max-width: 16.66%;
 	margin-right: 0;
 	border: 0;
 }
-
 #footer ul {
 	display: block;
 	list-style-type: none;
 	padding-left: 0;
 }
-
 #footer ul a {
 	text-decoration:none;
 }
-
 .widget-wrapper select,  .widget-wrapper input[type="text"],  .widget-wrapper input[type="password"],  .widget-wrapper input[type="email"] {
 	max-width: 75%;
 }
-
 #widgets {
 	margin-top: 40px;
 }
-
 #widgets a {
 	display: inline-block;
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
 }
-
 #widgets form {
 	margin: 0;
 }
-
 .widget-wrapper {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -1680,7 +1668,7 @@ div#sidebar_left a:hover {
 	text-align: center;
 	line-height: 1.2em;
 	/* max-width: 45%; */
-	max-width: 180px;
+max-width: 180px;
 }
 .top-widget ul {
 	padding: 0;
@@ -1693,7 +1681,7 @@ div#sidebar_left a:hover {
 }
 #footer_widget .textwidget {
 	/*height: 250px;*/
-	background-color: #948d7a;
+background-color: #948d7a;
 	padding: 5px 0;
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-weight: 600;
@@ -1708,7 +1696,7 @@ div#sidebar_left a:hover {
 }
 #footer_widget #text-3 .widget-title {
 	/*background-color: #333333;*/
-	padding: 0 0 0 20px;
+padding: 0 0 0 20px;
 }
 #footer_widget #text-3 .textwidget {
 	padding: 5px 20px;
@@ -1752,7 +1740,7 @@ div#sidebar_left a:hover {
 .testimonial {
 	padding: 1em;
 	padding-left: 70px;
-	background: transparent url(/wp-content/uploads/2014/08/quote_bkg.png) no-repeat;
+	background: transparent url(http://www.chconline.org/wp-content/uploads/2014/08/quote_bkg.png) no-repeat;
 	background-color: #edece9;
 	border-left: none;
 	-webkit-border-radius: 6px;
@@ -1773,7 +1761,7 @@ div#sidebar_left a:hover {
 .tagline {
 	font-size: 1.5em;
 	line-height: 1.4em;
-	margin-left: 30px;
+	/*margin-left: 30px;*/
 	font-weight: 300;
 	color: #111;
 }
@@ -1786,95 +1774,95 @@ div#sidebar_left a:hover {
 }
 /*Dark Gray Box*/
 .darkgraybox {
-	clear:both;
-	background: #948D79;
-	padding:20px;
-	margin-bottom: 15px;
-	color:#fff;
-	font-weight:600;
+clear:both;
+background: #948D79;
+padding:20px;
+margin-bottom: 15px;
+color:#fff;
+font-weight:600;
 }
 .darkgraybox h2 {
-	text-decoration: none;
-	color:#fff;
-	font-weight:700;
-	margin-top: 0px;
+text-decoration: none;
+color:#fff;
+font-weight:700;
+margin-top: 0px;
 }
 .darkgraybox a, .darkgraybox a:link {
-	color:#fff;
-	font-weight:600;
-	text-decoration: underline;
+color:#fff;
+font-weight:600;
+text-decoration: underline;
 }
 .darkgraybox h2 a:link {
-	color:#fff;
-	text-decoration: underline;
-	font-weight:700;
+color:#fff;
+text-decoration: underline;
+font-weight:700;
 }
 .darkgraybox a:hover, .darkgraybox h2 a:hover {
-	color:#000;
-	text-decoration: underline;
+color:#000;
+text-decoration: underline;
 }
 .darkgraybox img {
-	border: 1px solid #333;
+border: 1px solid #333;
 }
 /*Gray Box*/
 .graybox {
-	clear:both;
-	background: #EDECE9;
-	padding: 20px;
-	margin-bottom: 15px;
+clear:both;
+background: #EDECE9;
+padding: 20px;
+margin-bottom: 15px;
 }
 .graybox h2 {
-	margin-top: 0px;
+margin-top: 0px;
 }
 .graybox h2 a:link {
-	text-decoration: underline;
+text-decoration: underline;
 }
 .graybox h2 a:hover {
-	text-decoration: none;
-	color:#000;
+text-decoration: none;
+color:#000;
 }
 .graybox h3 {
-	color:#666;
+color:#666;
 }
 .graybox img {
-	border: 1px solid #ccc;
+border: 1px solid #ccc;
 }
 /*White Box*/
 .whitebox {
-	clear:both;
-	background: #fff;
-	padding: 20px;
-	margin-bottom: 15px;
-	border:2px solid #EDECE9;
+clear:both;
+background: #fff;
+padding: 20px;
+margin-bottom: 15px;
+border:2px solid #EDECE9;
 }
 .whitebox h2 {
-	margin-top: 0px;
+margin-top: 0px;
 }
 .whitebox h2 a:link {
-	text-decoration: underline;
+text-decoration: underline;
 }
 .whitebox h2 a:hover {
-	text-decoration: none;
-	color:#000;
+text-decoration: none;
+color:#000;
 }
 .whitebox img {
-	border: 1px solid #ccc;
+border: 1px solid #ccc;
 }
 
 span.fatlink a {
-	font-weight:800;
-	font-size:1.8em;
+font-weight:800;
+font-size:1.8em;
 }
 
 /*Blue Line Box*/
 .bluelinebox {
-	clear:both;
-	background:#fff;
-	border:1px solid #00BCE4;
-	border-bottom:15px solid #00BCE4;
-	padding: 20px;
-	margin-bottom: 15px;
-	margin-top: 30px;
+clear:both;
+background:#fff;
+border:1px solid #00BCE4;
+border-bottom:15px solid #00BCE4;
+padding: 20px;
+margin-bottom: 15px;
+margin-top: 30px;
 }
 .bluelinebox_feature {
     font-size: 1.5em;
@@ -1892,26 +1880,26 @@ span.fatlink a {
 }
 
 .bluelinebox h2 {
-	text-decoration: none;
-	margin-top: 0px;
+text-decoration: none;
+margin-top: 0px;
 }
 .bluelinebox a, .bluelinebox a:link {
 }
 .bluelinebox h2 a:link {
-	text-decoration: none;
+text-decoration: none;
 }
 .bluebox a:hover, .bluebox h2 a:hover {
 
 }
 /*Orange Line Box*/
 .orangelinebox {
-	clear:both;
-	background:#fff;
-	border:1px solid #F26532;
-	border-bottom:15px solid #F26532;
-	padding: 20px;
-	margin-bottom: 15px;
-	min-height: 170px;
+clear:both;
+background:#fff;
+border:1px solid #F26532;
+border-bottom:15px solid #F26532;
+padding: 20px;
+margin-bottom: 15px;
+min-height: 170px;
 }
 .orangelinebox_feature {
     font-size: 1.5em;
@@ -1921,51 +1909,51 @@ span.fatlink a {
     margin: 0;
 }
 .orangelinebox h2 {
-	text-decoration: none;
-	margin-top: 0px;
+text-decoration: none;
+margin-top: 0px;
 }
 
 /*Blue Box*/
 .bluebox {
-	clear:both;
-	background:#00BCE4;
-	padding: 20px;
-	margin-bottom: 15px;
-	color:#fff;
-	font-weight:600;
+clear:both;
+background:#00BCE4;
+padding: 20px;
+margin-bottom: 15px;
+color:#fff;
+font-weight:600;
 }
 .bluebox h2 {
-	text-decoration: none;
-	color:#fff;
-	font-weight:700;
-	margin-top: 0px;
+text-decoration: none;
+color:#fff;
+font-weight:700;
+margin-top: 0px;
 }
 .bluebox a, .bluebox a:link {
-	color:#fff;
-	font-weight:600;
-	text-decoration: underline;
+color:#fff;
+font-weight:600;
+text-decoration: underline;
 }
 .bluebox h2 a:link {
-	color:#fff;
-	text-decoration: underline;
-	font-weight:700;
+color:#fff;
+text-decoration: underline;
+font-weight:700;
 }
 .bluebox a:hover, .bluebox h2 a:hover {
-	color:#000;
-	text-decoration: underline;
+color:#000;
+text-decoration: underline;
 }
 .bluebox img {
-	border: 1px solid #ccc;
+border: 1px solid #ccc;
 }
 /*Gold Line Box*/
 .goldlinebox {
-	clear:both;
-	background:#fff;
-	border:1px solid #f6a01a;
-	border-bottom:15px solid #f6a01a;
-	padding: 20px;
-	margin-bottom: 15px;
-	min-height: 170px;
+clear:both;
+background:#fff;
+border:1px solid #f6a01a;
+border-bottom:15px solid #f6a01a;
+padding: 20px;
+margin-bottom: 15px;
+min-height: 170px;
 }
 .goldlinebox_feature {
     font-size: 1.5em;
@@ -1975,115 +1963,115 @@ span.fatlink a {
     margin: 0;
 }
 .goldlinebox h2 {
-	text-decoration: none;
-	margin-top: 0px;
+text-decoration: none;
+margin-top: 0px;
 }
 /*Green Box*/
 .greenbox {
-	clear:both;
-	background:#b0bc22;
-	padding: 20px;
-	margin-bottom: 15px;
-	color:#fff;
-	font-weight:600;
+clear:both;
+background:#b0bc22;
+padding: 20px;
+margin-bottom: 15px;
+color:#fff;
+font-weight:600;
 }
 .greenbox h2 {
-	text-decoration: none;
-	color:#fff;
-	font-weight:700;
-	margin-top: 0px;
+text-decoration: none;
+color:#fff;
+font-weight:700;
+margin-top: 0px;
 }
 .greenbox a, .greenbox a:link {
-	color:#fff;
-	text-decoration: underline;
-	font-weight:600;
+color:#fff;
+text-decoration: underline;
+font-weight:600;
 }
 .greenbox h2 a:link {
-	color:#fff;
-	text-decoration: underline;
-	font-weight:700;
+color:#fff;
+text-decoration: underline;
+font-weight:700;
 }
 .greenbox a:hover, .greenbox h2 a:hover {
-	color:#000;
-	text-decoration: underline;
+color:#000;
+text-decoration: underline;
 }
 .greenbox img {
-	border: 1px solid #ccc;
+border: 1px solid #ccc;
 }
 /*Gold Box*/
 .goldbox {
-	clear:both;
-	background:#f6a01a;
-	padding: 20px;
-	margin-bottom: 15px;
-	color:#fff;
-	font-weight:600;
+clear:both;
+background:#f6a01a;
+padding: 20px;
+margin-bottom: 15px;
+color:#fff;
+font-weight:600;
 }
 .goldbox h2 {
-	text-decoration: none;
-	color:#fff;
-	font-weight:700;
-	margin-top: 0px;
+text-decoration: none;
+color:#fff;
+font-weight:700;
+margin-top: 0px;
 }
 .goldbox a, .goldbox a:link {
-	color:#fff;
-	text-decoration: underline;
-	font-weight:600;
+color:#fff;
+text-decoration: underline;
+font-weight:600;
 }
 .goldbox h2 a:link {
-	color:#fff;
-	text-decoration: underline;
-	font-weight:700;
+color:#fff;
+text-decoration: underline;
+font-weight:700;
 }
 .goldbox a:hover, .goldbox h2 a:hover {
-	color:#000;
-	text-decoration: underline;
+color:#000;
+text-decoration: underline;
 }
 .goldbox img {
-	border: 1px solid #ccc;
+border: 1px solid #ccc;
 }
 
 .goldbox2 {
-	background:#ffffff;
-	padding: 20px;
-	margin-bottom: 15px;
-	border:3px solid #f6a01a;
+background:#ffffff;
+padding: 20px;
+margin-bottom: 15px;
+border:3px solid #f6a01a;
 }
 .goldbox2 h2 {
-	margin-top: 0px;
+margin-top: 0px;
 }
 
 /*Orange Box*/
 .orangebox {
-	clear:both;
-	background:#F26532;
-	padding: 20px;
-	margin-bottom: 15px;
-	color:#fff;
-	font-weight:600;
+clear:both;
+background:#F26532;
+padding: 20px;
+margin-bottom: 15px;
+color:#fff;
+font-weight:600;
 }
 .orangebox h2 {
-	text-decoration: none;
-	color:#fff;
-	font-weight:700;
-	margin-top: 0px;
+text-decoration: none;
+color:#fff;
+font-weight:700;
+margin-top: 0px;
 }
 .orangebox a, .orangebox a:link {
-	color:#fff;
-	text-decoration: underline;
-	font-weight:600;
+color:#fff;
+text-decoration: underline;
+font-weight:600;
 }
 .orangebox h2 a:link {
-	color:#fff;
-	text-decoration: underline;
-	font-weight:700;
+color:#fff;
+text-decoration: underline;
+font-weight:700;
 }
 .orangebox a:hover, .orangebox h2 a:hover {
-	color:#000;
-	text-decoration: underline;
+color:#000;
+text-decoration: underline;
 }
 .orangebox img {
-	border: 1px solid #ccc;
+border: 1px solid #ccc;
 }
 
 .gold-arrow-box {
@@ -2147,7 +2135,7 @@ span.fatlink a {
 }
 
 .bluefeaturebox-3col h2 {
-	margin: 0 0 10px 0;
+margin: 0 0 10px 0;
 }
 
 .bluefeaturebox-3col h2 a {
@@ -2466,7 +2454,7 @@ body.single-format-standard img.wp-post-image {
 	text-align: center;
 	font-weight: bold;
 	padding: 5px;
-	background-image: url("/assets/calendar/tilebottom_blue.png");
+	background-image: url("http://www.chconline.org/assets/calendar/tilebottom_blue.png");
 }
 .cat-event_title {
 	text-align: center;
@@ -2590,7 +2578,7 @@ p.center.supportchc.quote {
     padding: 0 20px;
 }
 
-li.grey-border-button.button-226x60.center, li.chcyellow-button.button-226x60.center, li.lightgrey-border-button.button-226x60.center, li.lightgrey-border-button.button-180x60.center, li.chcyellow-button.button-180x60.center, li.lightgrey-border-button.button-180x84.center, li.chcyellow-button.button-180x84.center, li.lightgrey-border-button.button-190x84.center, li.chcyellow-button.button-190x84.center, li.lightgrey-border-button.button-190x60.center, li.chcyellow-button.button-190x60.center  {
+li.grey-border-button.button-226x60.center, li.chcyellow-button.button-226x60.center, li.chcblue-button.button-226x60.center, li.lightgrey-border-button.button-226x60.center, li.lightgrey-border-button.button-180x60.center, li.chcyellow-button.button-180x60.center, li.chcblue-button.button-180x60.center, li.lightgrey-border-button.button-180x84.center, li.chcyellow-button.button-180x84.center, li.chcblue-button.button-180x84.center, li.lightgrey-border-button.button-190x84.center, li.chcyellow-button.button-190x84.center, li.chcblue-button.button-190x84.center, li.lightgrey-border-button.button-190x60.center, li.chcyellow-button.button-190x60.center, li.chcblue-button.button-190x60.center  {
     list-style: none;
     float: left;
     margin: 5px 5px;
@@ -2625,6 +2613,7 @@ ul.supportchc.buttons {
     padding: 0;
     margin: 20px 10px;
     border: 1px solid #CCC2B6;
+	min-height:360px;
 }
 
 .supportchc .afcontent-photo-box {
@@ -2730,6 +2719,19 @@ ul.supportchc.buttons {
     background-color: #fff;
 }
 
+.supportchc .chcblue-button a {
+    background-color: #00bce4;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #00bce4;
+}
+
+.supportchc .chcblue-button a:hover {
+    color: #00bce4;
+    background-color: #fff;
+}
+
 .supportchc .fundraising-events {
     margin: 20px auto;
     max-width: 895px;
@@ -2811,9 +2813,10 @@ ul.supportchc.buttons {
 
 .button-190x60 a{
     display: block;
-    font-weight: 700;
-    padding: 17px 3px;
+    /*font-weight: 700;*/
+    padding: 17px 5px;
     font-size: 15px;
+	line-height: 1.5em;
 }
 
 .button-190x84{
@@ -2823,9 +2826,10 @@ ul.supportchc.buttons {
 
 .button-190x84 a {
     display: block;
-    font-weight: 700;
+    /*font-weight: 700;*/
     padding: 29px 3px;
     font-size: 15px;
+	line-height:1.5em;
 }
 
 .button-226x60{
@@ -2909,6 +2913,162 @@ ul.supportchc.buttons {
 
 /***** End Support CHC ****/
 
+/***** Impact and Outcomes ****/
+
+ul.impact-outcomes-buttons {
+    margin: 0 auto;
+    clear: both;
+    display: block;
+    max-width: 980px;
+}
+
+ul.impact-outcomes-buttons li {
+    display: block;
+    float: left;
+    width: 227px;
+    margin: 20px 5px;
+}
+
+ul.impact-outcomes-buttons li a {
+    color: #333;
+    border: 1px solid #CCC2B6;
+    padding: 20px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+ul.impact-outcomes-buttons li a:hover {
+    color: #fff;
+    background-color: #CCC2B6;
+}
+
+
+.impact-outcomes-homebox{
+	max-width:944px;
+    margin: 0 auto 40px auto;
+	clear: both;
+}
+
+.impact-outcomes-homebox h2{
+    background-color: #00BCE4;
+    padding: 23px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+    margin: 0 auto;
+    line-height: 33px;
+	border-bottom: 5px #0093D0 solid;
+}
+
+.impact-outcomes-homebox p {
+    margin: 0;
+}
+
+.impactbox p {
+    max-width: 312px;
+	margin:0 auto;
+}
+
+.impact-text-large{
+	font-size:30px;
+	line-height:36px;
+	font-weight: 800;
+	color:#111111;
+}
+
+.impact-text-normal{
+	font-size:21px;
+	line-height: 25px;
+	color:#111111;
+	font-weight:300;
+}
+
+/* .clinicalservices-impactads {
+    background: no-repeat url(/wp-content/uploads/2017/12/CHC_Impact-Outcomes2017-divisionads_ClinicalServices-800x210.png);
+    max-width: 800px;
+    min-height: 313px;
+}*/
+
+.clinicalservices-impactads {
+    background: #F06531 no-repeat right url("/wp-content/uploads/2017/12/CHC_Impact-Outcomes2017-divisionads_ClinicalServices-desktop-bkg.png");
+    width: 800px;
+    margin: 0 auto;
+    min-height: 210px;
+}
+
+.ebc-impactads {
+    background: #00bce4 no-repeat right url("/wp-content/uploads/2017/12/CHC_Impact-Outcomes2017-divisionads_EstherBClarkSchool-desktop-bkg.png");
+    width: 800px;
+    margin: 0 auto;
+    min-height: 210px;
+}
+
+.communityconnections-impactads {
+    background: #FCAF17 no-repeat right url("/wp-content/uploads/2017/12/CHC_Impact-Outcomes2017-divisionads_CommunityConnections-desktop-bkg.png");
+    width: 800px;
+    margin: 0 auto;
+    min-height: 210px;
+}
+
+.clinicalservices-impactads p {
+    padding: 52px 0 0 31px;
+    width: 375px;
+    color: white;
+    font-size: 31px;
+    line-height: 33px;
+}
+
+.ebc-impactads p {
+    padding: 20px 0 0 30px;
+    width: 375px;
+    color: white;
+    font-size: 31px;
+    line-height: 33px;
+}
+
+.communityconnections-impactads p {
+    padding: 20px 0 0 30px;
+    width: 375px;
+    color: white;
+    font-size: 29px;
+    line-height: 33px;
+}
+
+.clinicalservices-impactads span, .ebc-impactads span, .communityconnections-impactads span {
+    font-weight: 800;
+}
+
+/***** End Impact and Outcomes ****/
+
+/**** CHC Font Colors *****/
+p.chc-red, h3.chc-red, span.chc-red{
+    color: #F06531;
+}
+
+.chc-red{
+    color: #F06531;
+}
+
+.chc-gold{
+	color: #FCAF17;
+}
+
+.chc-blue{
+    color: #00bce4;
+}
+.chc-gray{
+    color: #333;
+}
+.dark-gray {
+    color: #333;
+}
+/**** End CHC Font Colors *****/
+
 /*MOBILE LAYOUT*/
 
 @media screen and (max-width:1024px) {
@@ -2928,6 +3088,8 @@ ul.supportchc.buttons {
 	padding: 0;
 }
 }
+
+
 @media screen and (max-width: 960px) {
 .hentry {
 	clear: none;
@@ -2946,6 +3108,7 @@ h1.bigheader, .post-entry h1 {
 	color: #333;
 	font-weight: 800;
 	text-align: center;
+	line-height: 58px;
 }
 .post-entry h2 {
 	text-align:center;
@@ -3244,6 +3407,81 @@ div.secondary_menu_prefix {
  @media screen and (max-width: 800px) {
 }
  @media screen and (max-width: 768px) {
+
+ul.impact-outcomes-buttons {
+    margin: 0 auto;
+    clear: both;
+    display: block;
+    max-width: 475px;
+    padding: 0;
+    min-height: 200px;
+}
+	 
+ul.impact-outcomes-buttons li {
+    display: block;
+    float: left;
+    width: 227px;
+    margin: 5px 5px;
+}
+	 
+.clinicalservices-impactads {
+    background: #F06531 no-repeat bottom url("http://beta.chconline.org/wp-content/uploads/2017/12/CHC_Impact-Outcomes2017-divisionads_ClinicalServices-mobile-bkg.png");
+    width: 100%;
+    margin: 0 auto;
+    min-height: 480px;
+    background-size: contain;
+}
+	
+.clinicalservices-impactads p {
+    padding: 40px 0 0 0;
+    width: 90%;
+    color: white;
+    font-size: 27px;
+    line-height: 33px;
+	margin:0 auto;
+	text-align: center;
+}
+	 
+.ebc-impactads {
+    background: #00bce4 no-repeat bottom url("/wp-content/uploads/2017/12/CHC_Impact-Outcomes2017-divisionads_EstherBClark-mobile-bkg.png");
+    width: 100%;
+    margin: 0 auto;
+    min-height: 480px;
+    background-size: contain;
+}
+	 
+.ebc-impactads p {
+    padding: 20px 0 0 0;
+    width: 90%;
+    color: white;
+    font-size: 27px;
+    line-height: 33px;
+	margin:0 auto;
+	text-align: center;
+}
+	 
+.communityconnections-impactads {
+    background: #FCAF17 no-repeat bottom url("/wp-content/uploads/2017/12/CHC_Impact-Outcomes2017-divisionads_CommunityConnections-mobile-bkg.png");
+    width: 100%;
+    margin: 0 auto;
+    min-height: 480px;
+    background-size: contain;
+}
+	
+.communityconnections-impactads p {
+    padding: 20px 0 0 0;
+    width: 90%;
+    color: white;
+    font-size: 27px;
+    line-height: 33px;
+	margin:0 auto;
+	text-align: center;
+}
+	
+.impactbox p {
+    margin: 0 auto;
+}
+	 
 .js .main-nav {
 	clear: both;
 	position: relative;
@@ -3399,43 +3637,19 @@ div#sidebar_left {
 
  @media screen and (max-width : 768px) and (orientation : landscape) {
 }
- @media screen and (max-width: 650px) {
-.button-177x39 {
-    width: 90%;
-}
 
-#mainnav_home {
-	background: none;
-	min-height: 170px;
-}
-
-li.grey-border-button.button-226x60.center, li.chcyellow-button.button-226x60.center, li.lightgrey-border-button.button-226x60.center, li.lightgrey-border-button.button-180x60.center, li.chcyellow-button.button-180x60.center, li.lightgrey-border-button.button-180x84.center, li.chcyellow-button.button-180x84.center, li.lightgrey-border-button.button-190x84.center, li.chcyellow-button.button-190x84.center, li.lightgrey-border-button.button-190x60.center, li.chcyellow-button.button-190x60.center  {
-    float: none;
-    margin: 10px auto;
-    width: 95%;
-}
-
-ul.supportchc.buttons {
-    max-width: 100%;
-}
-
-.content-photo-box .content, .afcontent-photo-box .content {
-    max-width: 100%;
-    float: none;
-    padding-bottom:20px;
-}
-
-.supportchc .chcbreakfast, .supportchc .rocktoberfest {
-    margin: 0 auto 40px auto;
-    float:none;
-}
-
-.content-photo-box .image, .afcontent-photo-box .image {
-    display: none;
-}
-
-}
 @media screen and (max-width: 980px) {
+/* Impact and Outcomes */
+.impactbox {
+    max-width: 312px;
+	margin: 0 auto;
+}
+	
+.col-380.impactbox{
+	margin: 60px auto 0 auto;
+}
+/* End Impact and Outcomes */
+
 /* Support CHC */
 .supportchc .chcbreakfast, .supportchc .rocktoberfest {
     max-width: 275px;
@@ -3494,4 +3708,70 @@ ul.supportchc.buttons {
 }
 
 /* End Support CHC */
+}
+
+@media screen and (max-width: 650px) {
+
+ul.impact-outcomes-buttons {
+    margin: 0 auto;
+    clear: both;
+    display: block;
+    max-width: 100%;
+    padding: 0;
+}
+	 
+ul.impact-outcomes-buttons li {
+    display: block;
+    float: none;
+    width: 100%;
+    margin: 12px auto;
+}
+	
+.clinicalservices-impactads {
+    min-height: 355px;
+}
+
+.ebc-impactads {
+    min-height: 385px;
+}
+	
+.communityconnections-impactads{
+	min-height: 390px;
+}
+
+	
+.button-177x39 {
+    width: 90%;
+}
+
+#mainnav_home {
+	background: none;
+	min-height: 170px;
+}
+
+li.grey-border-button.button-226x60.center, li.chcyellow-button.button-226x60.center, li.chcblue-button.button-226x60.center, li.lightgrey-border-button.button-226x60.center, li.lightgrey-border-button.button-180x60.center, li.chcyellow-button.button-180x60.center, li.chcblue-button.button-180x60.center, li.lightgrey-border-button.button-180x84.center, li.chcyellow-button.button-180x84.center, li.chcblue-button.button-180x84.center, li.lightgrey-border-button.button-190x84.center, li.chcyellow-button.button-190x84.center, li.chcblue-button.button-190x84.center, li.lightgrey-border-button.button-190x60.center, li.chcyellow-button.button-190x60.center, li.chcblue-button.button-190x60.center  {
+    float: none;
+    margin: 10px auto;
+    width: 95%;
+}
+
+ul.supportchc.buttons {
+    max-width: 100%;
+}
+
+.content-photo-box .content, .afcontent-photo-box .content {
+    max-width: 100%;
+    float: none;
+    padding-bottom:20px;
+}
+
+.supportchc .chcbreakfast, .supportchc .rocktoberfest {
+    margin: 0 auto 40px auto;
+    float:none;
+}
+
+.content-photo-box .image, .afcontent-photo-box .image {
+    display: none;
+}
+
 }
