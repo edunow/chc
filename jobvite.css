@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/*
+Created: 2018-02-03 
+Purpose: Customize Jobvite embedded content.
+Last updated: 2018-03-21
+
+*/
+
+.jv-page-header h1 a {
+    display:none;
+}
+
+h1.jv-logo {
+    background-image: url(http://beta.chconline.org/wp-content/uploads/2014/10/CHC_logo_colorweb.png);
+    background-repeat: no-repeat;
+    height: 50px;
+    background-size: contain;
+}
+
+a {
+    color: #09a9cb;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.jv-wrapper h2 {
+    font-weight: 300;
+    font-size: 36px;
+    /*text-align: center;*/
+    margin-bottom: .5em;
+    margin-top: .75em;
+    line-height: 1.0em;
+    font-family: 'Open Sans';
+}
+
+.jv-wrapper h3 {
+    font-weight: 300;
+    font-size: 36px;
+    /*text-align: center;*/
+    margin-bottom: .5em;
+    margin-top: .75em;
+    line-height: 1.0em;
+    font-family: 'Open Sans';
+}
+
+.jv-job-list {
+    color: #999;
+    width: 100%;
+    margin: .5em 0 1.6em 0;
+}
+
+.jv-job-list td {
+    border-bottom: solid 2px #eeeeee;
+    padding: .8em;
+    vertical-align: top;
+}
+
+.jv-job-list-inner {
+    background: #00bce4;
+    box-shadow: inset 0 8px 8px -8px rgba(0,0,0,0.2);
+    color: #fff;
+    padding: 0 1em;
+}
+
+.jv-logo:after {
+    background: -owg-linear-gradient(left, rgba(61,135,207,0), #00BCE4 40%);
+    background: -webkit-linear-gradient(left, rgba(61,135,207,0), #00BCE4 40%);
+    background: -moz-linear-gradient(left, rgba(61,135,207,0), #00BCE4 40%);
+    background: -o-linear-gradient(left, rgba(61,135,207,0), #00BCE4 40%);
+    background: linear-gradient(left, rgba(61,135,207,0), #00BCE4 40%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1.5em;
+}
+
+.jv-page-header {
+    background-color: #00BCE4;
+    color: #fff;
+    padding: 0.75em 0;
+    position: relative;
+}
+
+.jv-tabs {
+    background: #00BCE4;
+    border-top: solid 1px #b8d3ed;
+    display: table;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.jv-tab-active:before {
+    height: 0;
+    width: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #00BCE4;
+    bottom: -9px;
+    content: "";
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+    z-index: 2;
+}
+
+.jv-job-category-link .jv-list-icon {
+    color: #00BCE4;
+    right: 1.1em;
+}
+
+.jv-job-category-label {
+    font-weight: 600;
+    color: #0093d0;
+    margin-right: 2em;
+}
+
+.jv-job-category-link .jv-list-icon {
+    color: #0093d0;
+    right: 1.1em;
+}
