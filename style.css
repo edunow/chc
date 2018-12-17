@@ -2,12 +2,11 @@
 Theme Name: Responsive Child
 Template: responsive
 Author: Gerard Greenidge
-Version: 1.5
-Updated: 2017-02-18
+Version: 1.6
+Updated: 2018-09-01
 */
-@charset "UTF-8";
+
 @import url('../responsive/style.css');
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300);
 
 body{
 	width:100%;
@@ -29,7 +28,7 @@ text-rendering: optimizeLegibility;
 
 a {
 color: #09a9cb;
-font-weight: 400;
+font-weight: inherit;
 text-decoration: underline;
 }
 a:hover {
@@ -47,7 +46,9 @@ text-decoration: underline;
 	display: block;
 	padding: 0;
 	position: relative;
+	background-color: #fff;
 	}
+
 /*Top of the page announcement area*/
 .skip-container #colophon-widget .widget-wrapper {
     /*background-color: #00BCE4;*/
@@ -58,6 +59,20 @@ text-decoration: underline;
     border-radius: 0;
     color: #fff;
 }
+
+.header-emergency-phone {
+    font-size: .85em;
+    padding: 10px;
+    color: #555;
+    border-bottom: 1px solid #bbb;
+    -webkit-box-shadow: inset 0px -10px 25px -15px rgba(51,51,51,1);
+    -moz-box-shadow: inset 0px -10px 25px -15px rgba(51,51,51,1);
+    box-shadow: inset 0px -10px 25px -15px rgba(51,51,51,1);
+}
+.header-emergency-phone img {
+    margin: 3px 7px 3px 0;
+}
+
 
 .skip-container #colophon-widget .widget-wrapper p.announcement-line1 {
     font-weight: 800;
@@ -77,18 +92,21 @@ text-decoration: underline;
 }
 
 .skip-container #colophon-widget .widget-wrapper a {
-    background-color: #00BCE4;
-    /*background-color: #f26531;*/
+   /* background-color: #fcaf17;  Gold background */
+    /* background-color: #00BCE4;  Blue background*/
+    background-color: #f26531;
     text-decoration: none;
     display:block;
-    color:#fff;
+padding: 0 25px;
+    color:#fff; /* White font color */
+    /*color: #333333;*/
 }
 
 .skip-container #colophon-widget .widget-wrapper a:hover {
-   /* background-color: #FCAF17;*/
+    /* background-color: #FCAF17;  Gold hover color */
+    background-color: #00BCE4; /* Blue hover color */
     text-decoration: none;
 }
-
 
 .powered {
     padding-top: 10px;
@@ -128,6 +146,12 @@ position: relative;
 .video_wrapper {
 clear: none; float: left;
 }
+
+small.email {
+    text-transform: lowercase;
+    font-weight: normal;
+}
+
 /* Headings */
 
 
@@ -150,11 +174,6 @@ h2 {
 font-size: 1.450em;
 margin-bottom: .5em;
 margin-top: .75em;
-}
-
-body.page-template-the-center-sidebar-php h2, body.page-template-the-center-no-sidebar-php h2 { 
-color: #F26631;
-
 }
 
 h3 {
@@ -200,8 +219,6 @@ font-weight: 600;
 background: #EDECE9;
 }
 
-
-
 /* =Top Menu
 
 -------------------------------------------------------------- */
@@ -244,6 +261,7 @@ background-image: -webkit-gradient(linear, left top, left bottom, from(#585858),
 background-image: none;
 clear: both;
 margin: 0 auto;
+max-width:821px;
 }
 
 .menu a {
@@ -322,33 +340,21 @@ background: #c2cf21;
 }
 
 .top-menu li a { /*IS THIS BEING USED? CAN WE REMOVE?/*
-
 	*border-left: 1px solid #333333;*
-
 	color: #ffffff;
-	
 	font-size:12pt;
-
 	/*font-size: 1.17em; -  Will play with this later*/
-
 	padding: 0 4px 0 8px;
-
 }
-
 
 
 .top-menu > li:first-child > a {
-
 	border-left: none;
-
 }
 
 
-
 .top-menu li a:hover {
-
 	color: #f26531;
-
 }
 
 
@@ -356,6 +362,54 @@ background: #c2cf21;
 	margin-left:125px;
 }
 
+/*Other Buttons*/
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857;
+    border-radius: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+a.btn {
+	text-decoration: none;
+}
+.btn-blue {
+    background-color: #00bce4;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 0;
+    transition: .3s all;
+    border: 0;
+}
+a:hover.btn.btn-blue {
+	 background-color: #fcaf17;
+	color: #fff;
+}
+.btn-gold {
+    background-color: #fcaf17;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 0;
+    transition: .3s all;
+    border: 0;
+}
+a:hover.btn.btn-gold {
+	 background-color: #00bce4;
+	color: #fff;
+}
 /* HomePage Styles
 --------------------------------------------------------------*/
 
@@ -372,7 +426,6 @@ background: #c2cf21;
 	float: left;
 	padding-bottom: 25px;
 }
-
 
 
 .circle_adhd, .circle_adhd_hover, .circle_learning_differences, .circle_learning_differences_hover, .circle_autism, .circle_autism_hover, .circle_anxiety_depression, .circle_anxiety_depression_hover{
@@ -498,7 +551,7 @@ background: #fff url(/assets/homepage_subnav_bkg.png);
 
 #specialtyintro_mainnav{
 	float:left;
-	margin: 36px auto 36px 140px;
+	margin: 36px auto 36px 250px;
 	color: #958d7a;
 	font-size: .9em;
 	font-weight:bold;
@@ -562,7 +615,7 @@ float: left;
 }
 
 div.secondary_menu {
-max-width: 1120px;
+max-width: 1200px;
 margin: auto;
 padding-top: 5px;
 }
@@ -659,6 +712,13 @@ margin-left: 128px;
 	background-color:#fff;
 }
 
+.ebc-full-width .hentry {
+    clear: none;
+    float: left;
+    width: 100%;
+    margin-left: 0;
+}
+
 /* Community Clinic Menu
 
 -------------------------------------------------------------- */
@@ -753,14 +813,14 @@ margin-left: 128px;
 
 div#secondary_menu_wrapper_parented {
 margin: 0 auto;
-background-color: #948d79;
+background-color: #FCAF17;
 max-width: 100%;
 padding: 0 30px 0 30px;
 clear: both;
 }
 
 .parented-menu {
-background-color: #948d79;
+background-color: #FCAF17;
 min-height: 29px;
 margin: 0 auto;
 padding: 0;
@@ -783,11 +843,11 @@ text-decoration:none;
 
 .parented-menu > li:first-child > a {
 border-left: none;
-margin-left: 128px;
+margin-left: 60px;
 }
 
 .parented-menu li a:hover {
-	color: #948d79;
+	color: #FCAF17;
 	background-color:#fff;
 }
 
@@ -899,7 +959,6 @@ body.page-template-get-help-landing .hentry {
     margin: 0 auto;
 }
 
-
 /* Teen Mental Health Initiative (TMHI) Menu
 
 -------------------------------------------------------------- */
@@ -914,12 +973,12 @@ body.page-template-teen-mental-health-sidebar-page h4 {
 body.page-template-teen-mental-health-nosidebar-page .hentry {
     clear: none;
     float: left;
-    width: 84%;
-    margin-left: 130px;
+    width: 100%;
+    margin-left: 0;
 }
 
 body.page-template-teen-mental-health-nosidebar-page .tagline {
-margin-left: 0;
+    margin-left: 0;
 }
 
 body.page-template-teen-mental-health-sidebar-page h4 {
@@ -927,47 +986,62 @@ text-align:left;
 }
 
 div#secondary_menu_wrapper_tmhi {
-margin: 0 auto;
-background-color: #00bce4;
-max-width: 100%;
-padding: 0 30px 0 30px;
-clear: both;
+    margin: 0 auto;
+    background-color: #00bce4;
+    max-width: 100%;
+    padding: 0 30px 0 30px;
+    clear: both;
 }
 
 .tmhi-menu {
-background-color: #00bce4;
-min-height: 29px;
-margin: 0 auto;
-padding: 0;
-max-width: 100%;
+    background-color: #00bce4;
+    min-height: 29px;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 895px;
 }
 
 .tmhi-menu li {
-	display: inline;
-	list-style-type: none;
+    display: inline;
+    list-style-type: none;
 }
 
 .tmhi-menu li a {
-color: #ffffff;
-font-size: .9em;
-padding: 5px 8px 13px 8px;
-font-weight: 600;
-font-family: 'Open Sans', Arial, sans-serif;
-text-decoration:none;
+    color: #ffffff;
+    font-size: .9em;
+    padding: 5px 8px 13px 8px;
+    font-weight: 600;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-decoration:none;
 }
 
 .tmhi-menu > li:first-child > a {
-border-left: none;
-margin-left: 0px;
+    border-left: none;
+    margin-left: 0px;
 }
 
 .tmhi-menu li a:hover {
-	color: #00bce4;
-	background-color:#fff;
+    color: #00bce4;
+    background-color:#fff;
 }
 
-/*Community Education*/
+.teen-wellness .content-box{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
 
+.teen-wellness .content-box .image-header-331{
+    background-color: #00bbe3;
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.teen-wellness .content-box h2{
+    font-size: 1.3em; line-height: 1.2em; height:72px;
+}
+
+
+/*Community Education*/
 body.page-template-community-education-nosidebar-page .col-460 {
     width: 49.936170212766%;
     margin: 0;
@@ -1061,12 +1135,6 @@ text-decoration: none;
     margin-bottom: 25px;
 }
 
-#community-education-list a:hover
-{
-color: #fff;
-background-color: #958d7a;
-text-decoration: none;
-}
 #community-education-list li.parent-classes a:link {
     background-color: #f26531;
 }
@@ -1078,6 +1146,13 @@ text-decoration: none;
 }
 #community-education-list li.continuing-education-classes a:link {
     background-color: #fcaf17;
+}
+
+#community-education-list li.parent-classes a:hover, #community-education-list li.teacher-classes a:hover, #community-education-list li.teen-classes a:hover, #community-education-list li.continuing-education-classes a:hover
+{
+color: #fff;
+background-color: #958d7a;
+text-decoration: none;
 }
 
 .page-template-parent-ed a.view-as-grid, .page-template-community-education a.view-as-grid {
@@ -1098,6 +1173,182 @@ body.page-template-parent-ed #calendar-list-view .future-event p {
     margin-top: 0;
 }
 
+/* EXECUTIVE FUNCTION BOOTCAMP SECTION
+-------------------------------------------------------------- */
+body.page-template-the-center-sidebar-php h2, body.page-template-the-center-no-sidebar-php h2 { 
+    font-weight: 300;
+    font-size: 48px;
+}
+
+div.ef-bootcamp {
+    margin: auto;
+    text-align: center;
+    color:#333;
+}
+.ef-bootcamp p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    font-weight: 300;
+    
+}
+.ef-bootcamp .bigheader {
+    color: #fff;
+    margin-top: 20px;
+}
+.goldboxwide {
+    background: #FCAF17;
+padding:10px 0;
+}
+.grayboxwide {
+    background: #958d7a;
+    color: #fff;
+padding:10px 0;
+}
+.lightgrayboxwide {
+    background: #ccc2b6;
+    color: #fff;
+padding:10px 0;
+}
+.redboxwide {
+    background: #f26531;
+    color: #fff;
+padding:10px 0;
+}
+.ef-bootcamp .redboxwide, .ef-bootcamp .grayboxwide {
+    color: #fff !important;
+}
+.ef-group1 {
+    float: left;
+    border: 1px solid #958d7a;
+   /* max-width: 420px;*/
+  
+}
+.ef-bootcamp.ef-group1 {
+    margin: 5px;
+min-height: 475px;
+}
+.ef-bootcamp.ef-group1 h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    background: #958d7a;
+    color: #fff;
+    padding: 25px;
+    margin-top: 0;
+}
+
+.ef-group2 {
+    float: left;
+    border: 1px solid #f26531;
+    /*max-width: 420px;*/
+  }
+.ef-bootcamp.ef-group2 {
+    margin: 5px;
+min-height: 475px;
+}
+.ef-bootcamp.ef-group2 h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    background: #f26531;
+    color: #fff;
+    padding: 25px;
+    margin-top: 0;
+}
+
+.bottomarrow-red {
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 34px 34px 0 34px;
+    border-color: #f26531 transparent transparent transparent;
+}
+
+
+/* CAREERS SECTION
+-------------------------------------------------------------- */
+
+body.page-template-careers-no-sidebar h2 {
+    font-weight: 300;
+    font-size: 36px;
+}
+
+body.page-template-careers-no-sidebar hr {
+    background: #eeeeee;
+    height: 2px;
+    margin: 35px 0;
+}
+
+.bluebutton-905 a {
+    clear: both;
+    display: block;
+    margin: auto;
+    max-width: 905px;
+    background: #00BCE4;
+    padding: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.bluebutton a {
+    clear: both;
+    display: block;
+    margin: auto;
+    background: #00BCE4;
+    padding: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.bluebutton a:hover, .bluebutton-905 a:hover {
+    background: #fcaf17;
+}
+
+table.careers_featured_table {
+    border: 0 !important;
+}
+.careers_featured_table th {
+    font-weight: 400;
+    background: #fff;
+    text-align: left;
+    border: 0;
+}
+.careers_featured_table tr {
+    border-bottom: 2px solid #eeeeee !important;
+	text-align: left;
+}
+.careers_featured_table td {
+    border: 0 !important;
+}
+
+table.careers_all_table {
+    border: 0 !important;
+}
+.careers_all_table th {
+    font-weight: 400;
+    background: #eee;
+    text-align: left;
+    border: 0;
+}
+.careers_all_table tr {
+    border-bottom: 2px solid #eeeeee !important;
+}
+.careers_all_table td {
+    border: 0 !important;
+}
+
+.careers-eoe-footer {
+    color: #999;
+    font-size: 15px;
+    text-align: left;
+    clear: both;
+}
+
 
 
 /* CHC Breakfast
@@ -1105,9 +1356,9 @@ body.page-template-parent-ed #calendar-list-view .future-event p {
 -------------------------------------------------------------- */
 
 body.page-template-chc-breakfast-nosidebar .hentry {
-    width: 90%;
-    margin: auto;
-    margin-left: 5%;
+    width: 100%;
+    margin: auto 0;
+    margin-left: 0;
     clear: both;
 }
 
@@ -1206,6 +1457,7 @@ margin-left: 0;
 	background-color:#fff;
 }
 
+
 /**** New CHC Breakfast Styles ***/
 
 body.page-template-chc-breakfast-nosidebar h2.breakfast_box_header {
@@ -1226,7 +1478,7 @@ body.page-template-chc-breakfast-nosidebar h2.breakfast_box_header {
 
 .breakfast_head_left {
 	float:left;
-	background:#fff url(/wp-content/uploads/2016/12/CHC-breakfast-LandingPage-2017-banner-bkg-left.png) no-repeat top right;
+	background:#fff url(/wp-content/uploads/2017/01/CHC-breakfast-LandingPage-2017-banner-bkg-left.png) no-repeat top right;
 	min-height:356px;
 	min-width:554px;
 }
@@ -1244,7 +1496,7 @@ body.page-template-chc-breakfast-nosidebar h2.breakfast_box_header {
 
 .breakfast_head_right {
 	float:left;
-	background:#fff url(/wp-content/uploads/2016/12/CHC-breakfast-LandingPage-2017-banner-bkg-right.png) no-repeat top left; 
+	background:#fff url(/wp-content/uploads/2017/01/CHC-breakfast-LandingPage-2017-banner-bkg-right.png) no-repeat top left; 
 	min-height:356px;
 	min-width:554px;
 	}
@@ -1282,8 +1534,7 @@ body.page-template-chc-breakfast-nosidebar h2.breakfast_box_header {
     margin: 0 auto;
 }
 
-
-
+/**** End New CHC Breakfast Styles ****/
 .hentry {
 clear: none;
 float: left;
@@ -1291,8 +1542,15 @@ width: 77%;
 margin-left: 20px;
 }
 
+#content-full .hentry {
+    clear: none;
+    float: none;
+    width: 100%;
+    margin-left: 0px;
+}
+
 body.page-template-full-width-page-php .hentry {
-width: 97%;
+width: 100%;
 }
 
 .post-entry {
@@ -1302,8 +1560,9 @@ clear: both;
 body.page-template-full-width-page-php .post-entry {
 clear: none;
 float: left;
-margin-left: 138px;
+/*margin-left: 138px;*/
 }
+
 
 div#home_slideshow {
 float: left;
@@ -1354,8 +1613,7 @@ div#sidebar_left_home_mobile {
 div#sidebar_left_mobile {
     display: none;
 }
-
-div#secondary_menu_wrapper_center_mobile, #secondary_menu_wrapper_sandhill_mobile, #secondary_menu_wrapper_ebc_mobile, #secondary_menu_wrapper_clinic_mobile, #secondary_menu_wrapper_adhd_mobile, #secondary_menu_wrapper_anxiety_mobile, #secondary_menu_wrapper_autism_mobile, #secondary_menu_wrapper_parented_mobile, #secondary_menu_wrapper_gethelp_mobile, #secondary_menu_wrapper_tmhi_mobile {
+div#secondary_menu_wrapper_center_mobile, #secondary_menu_wrapper_sandhill_mobile, #secondary_menu_wrapper_ebc_mobile, #secondary_menu_wrapper_clinic_mobile, #secondary_menu_wrapper_adhd_mobile, #secondary_menu_wrapper_anxiety_mobile, #secondary_menu_wrapper_autism_mobile, #secondary_menu_wrapper_parented_mobile, #secondary_menu_wrapper_gethelp_mobile, #secondary_menu_wrapper_tmhi_mobile, #secondary_menu_wrapper_breakfast_mobile {
     display: none;
 }
 
@@ -1587,7 +1845,6 @@ line-height: 30px;
 body.home #content-full {
     margin-top: 0;
 }
-
 .viewport-container {
     margin: 0 auto;
     max-width: 1120px;
@@ -1988,10 +2245,14 @@ padding: 5px 20px;
 color: #f26531;
 }
 
+.copyright p {
+    line-height: 18px;
+}
+
 .testimonial {
 padding: 1em;
 padding-left: 70px;
-background: transparent url(http://www.chconline.org/wp-content/uploads/2014/08/quote_bkg.png) no-repeat;
+background: transparent url('/wp-content/uploads/2014/08/quote_bkg.png') no-repeat;
 background-color: #edece9;
 border-left: none;
 -webkit-border-radius: 6px;
@@ -2010,16 +2271,28 @@ margin-bottom: 10px;
 border-radius: 6px;
 }
 
+.testimonial-horiz {
+    background: #fff url(/wp-content/uploads/2017/08/testimonial-quote-line.png) no-repeat top center;
+	color: #111111;
+    border: 0;
+    padding: 50px 20px 10px 20px;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    font-style: italic;
+    min-height: 70px;
+    font-weight: 300;
+    margin: 40px 0 40px 0;
+}
+strong.testimonial-horiz {
+font-weight: 600;
+}
+
 .tagline {
 font-size: 1.5em;
 line-height: 1.4em;
-margin-left: 30px;
+/*margin-left: 30px;*/
 font-weight: 300;
 color: #111;
-}
-
-body.page-template-full-width-page .tagline {
-margin-left: 0;
 }
 
 .leader {
@@ -2128,7 +2401,6 @@ border:1px solid #00BCE4;
 border-bottom:15px solid #00BCE4;
 padding: 20px;
 margin-bottom: 15px;
-margin-top: 30px;
 }
 .bluelinebox_feature {
     font-size: 1.5em;
@@ -2179,6 +2451,40 @@ text-decoration: none;
 margin-top: 0px;
 }
 
+/*Gold Line Box*/
+.goldlinebox {
+clear:both;
+background:#fff;
+border:1px solid #f6a01a;
+border-bottom:15px solid #f6a01a;
+padding: 20px;
+margin-bottom: 15px;
+min-height: 170px;
+}
+
+.goldlinebox_feature {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    font-weight: 300;
+    color: #111;
+    margin: 0;
+}
+
+.goldlinebox h2 {
+text-decoration: none;
+margin-top: 0px;
+}
+
+/*Green Box*/
+.greenbox {
+clear:both;
+background:#b0bc22;
+padding: 20px;
+margin-bottom: 15px;
+color:#fff;
+font-weight:600;
+}
+
 /*Blue Box*/
 .bluebox {
 clear:both;
@@ -2211,27 +2517,7 @@ text-decoration: underline;
 .bluebox img {
 border: 1px solid #ccc;
 }
-/*Gold Line Box*/
-.goldlinebox {
-clear:both;
-background:#fff;
-border:1px solid #f6a01a;
-border-bottom:15px solid #f6a01a;
-padding: 20px;
-margin-bottom: 15px;
-min-height: 170px;
-}
-.goldlinebox_feature {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    font-weight: 300;
-    color: #111;
-    margin: 0;
-}
-.goldlinebox h2 {
-text-decoration: none;
-margin-top: 0px;
-}
+
 /*Green Box*/
 .greenbox {
 clear:both;
@@ -2340,6 +2626,8 @@ text-decoration: underline;
 border: 1px solid #ccc;
 }
 
+/**** TMHI Boxes *****/
+
 .gold-arrow-box {
     background: #fff url(/wp-content/uploads/2016/07/box-arrow-left-gold.png) left no-repeat;
     border: 1px solid #f6a01a;
@@ -2371,24 +2659,6 @@ border: 1px solid #ccc;
     background-position-x: 5px;
     color:#f6a01a;
 }
-/*Headshot Box*/
-.headshotbox {
-	float:left;
-	width:230px;
-	background:#fff;
-	border:1px solid #ccc2b6;
-	/*border-bottom:15px solid #00BCE4;*/
-	padding: 8px;
-    margin: 15px 5px 15px 5px;
-    text-align: center;
-    font-size: .9em;
-    line-height: 1em;
-    min-height: 220px;
-}
-.headshotbox img {
-    margin-bottom: 8px;
-}
-
 /*Feature Boxes*/
 
 .bluefeaturebox-3col {
@@ -2426,6 +2696,8 @@ margin: 0 0 10px 0;
     color: #333;
     font-size: 1.325em;
 }
+
+
 /*Homepage Slideshow Arrows*/
 .minimal-small .slide-arrows a.next {
 left: 58px;
@@ -2441,6 +2713,10 @@ bottom: 2px;
 }
 
 /* Directory */
+
+body.people-template-default h2 {
+    clear: both;
+}
 
 .directory_3col img, .directory_3col_right img {
 border: 1px solid #edece9;
@@ -2467,9 +2743,11 @@ padding: 20px 10px 10px 10px;
 border-bottom: 1px solid #edece9;
 text-align: center;
 }
-.directory_3col h2, .directory_3col_right h2 {
+
+body .directory_3col h2, body .directory_3col_right h2 {
 font-size: 18px;
 }
+
 ul.azlist {
 margin: 0;
 padding: 0;
@@ -2566,7 +2844,7 @@ font-weight: 400;
 }
 
 /*div#gform_wrapper_12 {
-background: #fff url('http://beta.chconline.org/assets/waystohelp_hero.jpg') top right no-repeat;
+background: #fff url('/assets/waystohelp_hero.jpg') top right no-repeat;
 }*/
 
 input#gform_submit_button_12, input#gform_submit_button_13 {
@@ -2614,14 +2892,18 @@ font-weight: 600px;
 border-bottom: 1px solid #edece9;
 }
 
+#directory-division img {
+    margin: 5px;
+}
+
 /*News Blog*/
 
-.category-news #content {
+.tag #content, .category-news #content {
     margin-top: 25px;
     margin-bottom: 20px;
 }
 
-.category-news h1.bigheader {
+.tag h1.bigheader, .category-news h1.bigheader {
     font-size: 3.225em;
     margin-bottom: .5em;
     margin-top: 0;
@@ -2629,12 +2911,12 @@ border-bottom: 1px solid #edece9;
     font-weight: 800;
 }
 
-.category-news .post-count-container {
+.tag .post-count-container, .category-news .post-count-container {
     clear: both;
     text-align: center;
 }
 
-.category-news .hentry {
+.tag .hentry, .category-news .hentry {
     clear: none;
     float: none;
     width: 100%;
@@ -2645,6 +2927,7 @@ border-bottom: 1px solid #edece9;
 font-size: .85em;
 font-style: italic;
 }
+
 #sidebar_right #widgets {
 margin-top: 0px;
 }
@@ -2672,7 +2955,7 @@ a2a_dd.addtoany_share_save{
 	margin-top: 20px;
 }*/
 
- .col-center {
+.col-center {
     clear: both;
     margin: auto;
 }
@@ -2805,11 +3088,11 @@ body.single-format-standard img.wp-post-image {
 	margin: -20px 0 20px 0;
 	list-style-type: none;
 	font-size: 15px;
-	border-left: 1px solid #f2f2f2;
-	border-bottom: 1px solid #f2f2f2;
+	/*border-left: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;*/
 }
 
-/*#upcoming-events li.future-event {
+#upcoming-events li.future-event {
 	width: 227px;
 	height: 500px;
 	float: left;
@@ -2817,25 +3100,14 @@ body.single-format-standard img.wp-post-image {
 	margin: -20px 0 20px 0;
 	list-style-type: none;
 	font-size: 15px;
-	border-left: 1px solid #f2f2f2;
-	border-bottom: 1px solid #f2f2f2;
-}*/
-
-#upcoming-events li.future-event {
-    width: 227px;
-    min-height: 230px;
-    float: left;
-    padding: 0 20px 0px 20px;
-    margin: -20px 0 10px 0;
-    list-style-type: none;
-    font-size: 15px;
+	/*border-left: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;*/
 }
 
 /*.future-event p {
 	text-align: center;
 	padding: 5px;
 }*/
-
 .single-event p { /*KD 12-16-16*/
     text-align: left;
 }
@@ -2849,12 +3121,13 @@ body.single-format-standard img.wp-post-image {
 }
 
 .cat-event_date {
-	background-color: blue;
+	/*background-color: blue;*/
 	color: white;
 	text-align: center;
 	font-weight: bold;
 	padding: 5px;
-	background-image: url("http://www.chconline.org/assets/calendar/tilebottom_blue.png");
+	/*background-image: url("http://www.chconline.org/assets/calendar/tilebottom_blue.png");*/
+	background: #00bce4 url('/assets/calendar/tilebottom_blue.png') no-repeat;
 }
 
 .cat-event_title {
@@ -2868,7 +3141,9 @@ body.single-format-standard img.wp-post-image {
 	text-decoration:none;
 	font-weight: 600;
 }
-
+.cat-event_desc {
+    text-align: center;
+}
 .my-calendar-header .mc-print {
 	display: none;
 }
@@ -2892,9 +3167,52 @@ h2.event-title img.category-icon {
   display: none;
 }
 
-.cal-details-leftcol { /*KD 12-16-16*/
+.cal-details-leftcol {  /*KD 12-16-16*/
   width: 225px;
   float: left;
+ margin-right: 25px !important;
+}
+
+.mc-main .details li {
+    line-height: 1.5;
+    margin-left: 240px;
+}
+
+#calendar-list-view #upcoming-events li.future-event {
+    width: 100%;
+    height: initial;
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 15px;
+    text-align: left;
+    border-left: none;
+    border-bottom: none;
+}
+
+#calendar-list-view .future-event p {
+    text-align: left;
+    padding: 0;
+}
+
+.community-ed-class-grid ul.upcoming-events li.future-event, .community-ed-class-grid ul.upcoming-events li.today {
+    float: left;
+    max-width: 30%;
+    margin-right: 20px;
+    list-style-type: none;
+    min-height: 500px;
+    /*border-left: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+    padding: 0;
+    margin-bottom: -5px;*/
+}
+
+.community-ed-class-grid img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    height: 225px;
+    width: 225px;
+	border: 1px solid #eeeeee;
 }
 
 /* End Calendar Styles */
@@ -2918,6 +3236,12 @@ h2.event-title img.category-icon {
 	text-align:center;
 }
 
+/* Google Custom Search */
+
+div#cse td {
+    border: 1px solid #fff;
+}
+
 /**** The Center Landing Pages ****/
 
 .page-template-the-center-no-sidebar #wrapper, .page-template-chc-breakfast-nosidebar #wrapper {
@@ -2933,7 +3257,7 @@ h2.event-title img.category-icon {
 }
 
 .teen_therapy_head{
-    background-image: url("http://www.chconline.org/wp-content/uploads/2016/12/TeenTherapy-header2016.jpg");    
+    background-image: url("/wp-content/uploads/2016/12/TeenTherapy-header2016.jpg");    
     height: 340px;
     width: 100%;
     background-repeat: no-repeat;
@@ -2967,14 +3291,14 @@ h2.event-title img.category-icon {
 
 body.page-template-the-center-no-sidebar-php .bg_blue_box h2 {
     color: #fff;
-    margin 0 auto;
+    margin: 0 auto;
     font-weight: 900;
     font-size: 3em;
     margin: 10px 40px;
 }
 
 body.page-template-the-center-no-sidebar-php .bg_blue_box ul{
-    margin 0 auto;
+    margin: 0 auto;
     color: #fff;
     list-style-type: none;
     margin: 0 40px
@@ -3000,6 +3324,932 @@ body.page-template-the-center-no-sidebar-php .bg_blue_box ul a:visited{
     color:inherit !important;
 }
 
+/*SPEAK MINDFULLY*/
+
+.speakmindfully-leadwitharrow{
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#79d5eb+0,00bce4+100 */
+background: #79d5eb; /* Old browsers */
+background: -moz-linear-gradient(top, #79d5eb 0%, #00bce4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #79d5eb 0%,#00bce4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #79d5eb 0%,#00bce4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79d5eb', endColorstr='#00bce4',GradientType=0 ); /* IE6-9 */
+text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    color: #fff;
+    font-size: 26px;
+    border-top:5px solid #00BBE3;
+    padding:25px;
+}
+
+.speakmindfully-redbox{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f26531+0,f9c2b2+100 */
+background: #f26531; /* Old browsers */
+background: -moz-linear-gradient(top, #f26531 0%, #f9c2b2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f26531 0%,#f9c2b2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f26531 0%,#f9c2b2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f26531', endColorstr='#f9c2b2',GradientType=0 ); /* IE6-9 */
+    padding:25px;
+    padding-bottom: 120px;
+    color: #fff;
+}
+
+.speakmindfully-redbox .gform_wrapper {
+    margin: 16px 0;
+    max-width: 71%;
+    float: left;
+}
+
+.speakmindfully-redbox h3 {
+    font-size: 48px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.speakmindfully-redbox .gform_wrapper .field_description_below .gfield_description {
+    padding-top: 0;
+    line-height: 20px;
+    font-size:16px;
+}
+
+.speakmindfully-redbox .gform_wrapper .gform_body {
+    margin-bottom: 0;
+}
+
+.speakmindfully-redbox .gform_wrapper .gform_footer {
+    padding: 20px 0px;
+    margin: -60px 0;
+    clear: both;
+    width: 100%;
+}
+
+.speakmindfully-redbox input#gform_submit_button_55 {
+    background: #f26531;
+    color: white;
+    border: none;
+    font-weight: 300;
+    padding: 10px 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    border-radius: 0;
+}
+
+.pledge-checkbox input#choice_55_5_1 {
+    margin-top: -55px;
+}
+
+.speakmindfully-redbox label#label_55_5_1 {
+    font-size: 18px;
+}
+
+.speakmindfully-redbox .gform_wrapper .top_label #field_55_5 .gfield_label {
+    display: none;
+}
+
+.speakmindfully-redbox input#input_55_6_3, .speakmindfully-redbox input#input_55_6_6, .speakmindfully-redbox input#input_55_3, .speakmindfully-redbox input#input_55_4 {
+    background-color: white;
+}
+
+.speakmindfully-redbox .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label {
+    font-size: 16px;
+}
+
+.speakmindfully-aboutus ul {
+    margin-left: 300px;
+}
+
+.speakmindfully-spreadtheword {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.speakmindfully-spreadtheword .row2-left-poster {
+    clear: left;
+    margin-left: 150px;
+}
+
+.speakmindfully-spreadtheword .row2-right-poster {
+    clear: right;
+    float: left;
+}
+
+.speakmindfully-why a img.alignnone {
+    margin: 0 0 10px 0;
+}
+
+.speakmindfully-spreadtheword a img.alignnone {
+    margin: 5px 10px 10px 0;
+}
+
+.speakmindfully-why {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.speakmindfully-how img.alignleft.size-full {
+    padding-left: 20px;
+    margin: 0;
+}
+
+p.chc-red, h3.chc-red, .chc-red  {
+    color: #F06531;
+}
+
+/***** Support CHC *****/
+
+/* Kill the margin to accommodate the wide yellow band*/
+.chcsupport.heroimage {
+    background: url(/wp-content/uploads/2017/07/hero-80.jpg);
+    max-width: 946px;
+    margin: 0 auto;
+    min-height: 441px;
+}
+
+.chcsupport.heroimage h2 {
+    font-size: 51px;
+    color: #fff;
+    max-width: 300px;
+    font-weight: 800;
+    padding: 75px 0 0 75px;
+    margin:0;
+    line-height: 60px;
+}
+
+.chcsupport.heroimage h3 {
+    color: #fff;
+    max-width: 400px;
+    font-size: 36px;
+    margin: 0;
+    padding: 0 0 0 80px;
+}
+
+.page-template-support-no-sidebar div#wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+    padding:0;
+}
+
+.supportchc .bigheader {
+    max-width: 950px;
+    margin: 0 auto;
+    font-size: 51px;
+}
+
+h2.supportchc.clear.center.light {
+    font-size: 48px;
+    font-weight: 300;
+    color: #555555;
+    padding: 40px 0;
+    margin: 0;
+}
+
+.supportchc h3 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #555555;
+}
+
+p.center.supportchc.quote {
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 300;
+    font-family: 'Open Sans';
+    margin: 20px auto;
+    max-width: 850px;
+    padding: 0 20px;
+}
+
+li.grey-border-button.button-226x60.center, li.chcyellow-button.button-226x60.center, li.chcblue-button.button-226x60.center, li.chcgreen-button.button-226x60.center, li.lightgrey-border-button.button-226x60.center, li.lightgrey-border-button.button-180x60.center, li.chcyellow-button.button-180x60.center, li.chcblue-button.button-180x60.center, li.chcgreen-button.button-180x60.center, li.lightgrey-border-button.button-180x84.center, li.chcyellow-button.button-180x84.center, li.chcblue-button.button-180x84.center, li.chcgreen-button.button-180x84.center, li.lightgrey-border-button.button-190x84.center, li.chcyellow-button.button-190x84.center, li.chcblue-button.button-190x84.center, li.chcgreen-button.button-190x84.center,  li.lightgrey-border-button.button-190x60.center, li.chcyellow-button.button-190x60.center, li.chcblue-button.button-190x60.center, li.chcgreen-button.button-190x60.center {
+    list-style: none;
+    float: left;
+    margin: 5px 5px;
+}
+
+ul.supportchc.buttons {
+    max-width: 1000px;
+    margin: 20px auto;
+    clear: both;
+    display: block;
+    padding: 0;
+    list-style-type: none;
+    list-style: none;
+}
+
+.supportchc .photo-content-photo-box .content {
+    float: left;
+    margin: 0 105px;
+}
+
+.photo-content-photo-box .image {
+    float: left;
+}
+
+.supportchc .fundingpriorities {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.supportchc .content-photo-box {
+    max-width: 478px;
+    padding: 0;
+    margin: 20px 10px;
+    border: 1px solid #CCC2B6;
+	min-height: 360px;
+}
+
+.supportchc .afcontent-photo-box {
+    max-width: 980px;
+    padding: 0;
+    margin: 20px auto;
+    border: 1px solid #CCC2B6;
+}
+
+.content-photo-box .content, .afcontent-photo-box .content {
+    max-width: 50%;
+    float: left;
+}
+
+.content-photo-box .image, .afcontent-photo-box .image  {
+    max-width: 50%;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.supportchc .content-photo-box p, .supportchc .afcontent-photo-box p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding: 0 20px;
+}
+
+.supportchc .chcbreakfast, .supportchc .rocktoberfest {
+    max-width: 275px;
+    border: 1px solid #CCC2B6;
+    margin: 0 10px 40px 10px;
+    float: left;
+}
+
+.supportchc .chcbreakfast p, .supportchc .rocktoberfest p {
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.supportchc .chcbreakfast img, .supportchc .rocktoberfest img {
+    margin:0;
+}
+.supportchc .transparent-button a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #fff;
+}
+
+.supportchc .transparent-button a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.supportchc .grey-border-button a {
+    color: #555555;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #555555;
+}
+
+.supportchc .grey-border-button a:hover {
+    color: #fff;
+    background-color: #555555;
+}
+
+.supportchc .lightgrey-border-button a {
+    color: #555555;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #CCC2B6;
+}
+
+.supportchc .lightgrey-border-button a:hover {
+    color: #fff;
+    background-color: #CCC2B6;
+}
+
+
+.supportchc .lightgrey-button a {
+    background-color: #CCC2B6;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #CCC2B6;
+}
+
+.supportchc .lightgrey-button a:hover {
+    color: #CCC2B6;
+    background-color: #fff;
+}
+
+.supportchc .chcyellow-button a {
+    background-color: #FCAF17;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #FCAF17;
+}
+
+.supportchc .chcyellow-button a:hover {
+    color: #FCAF17;
+    background-color: #fff;
+}
+
+.supportchc .chcblue-button a {
+    background-color: #00bce4;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #00bce4;
+}
+
+.supportchc .chcblue-button a:hover {
+    color: #00bce4;
+    background-color: #fff;
+}
+
+.supportchc .chcgreen-button a {
+    background-color: #C1CD23;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #C1CD23;
+}
+
+.supportchc .chcgreen-button a:hover {
+    color: #C1CD23;
+    background-color: #fff;
+}
+
+.supportchc .fundraising-events {
+    margin: 20px auto;
+    max-width: 895px;
+}
+
+.supportchc .sharestory, .supportchc .adbvancementteam{
+    margin: 40px auto 0 auto;
+    max-width: 650px;
+}
+
+.supportchc .sharestory p, .supportchc .sharestory p, .supportchc .subtext{
+    font-size:15px;
+}
+
+.supportchc .goldboxwide h3{
+    color:#fff;
+}
+
+.supportchc .subtext{
+    font-size:15px;
+}
+
+.supportchc .goldboxwide .subtext{
+    color:#fff;
+}
+
+.button-177x39{
+    width: 177px;
+    margin: 20px auto;
+}
+
+.button-177x39 a{
+    display: block;
+    font-weight: 700;
+    padding: 6px 3px;
+    font-size: 16px;
+}
+
+.button-179x40{
+    width: 179px;
+    margin: 20px auto;
+}
+
+.button-179x40 a{
+    display: block;
+    font-weight: 700;
+    padding: 7px 3px;
+    font-size: 16px;
+}
+
+.button-180x60{
+    width: 180px;
+    margin: 20px auto;
+}
+
+.button-180x60 a{
+    display: block;
+    font-weight: 700;
+    padding: 17px 3px;
+    font-size: 15px;
+}
+
+.button-180x84{
+    width: 180px;
+    margin: 20px auto;
+}
+
+.button-180x84 a {
+    display: block;
+    font-weight: 700;
+    padding: 29px 3px;
+    font-size: 15px;
+}
+
+.button-190x60{
+    width: 190px;
+    margin: 20px auto;
+}
+
+.button-190x60 a{
+    display: block;
+    padding: 17px 3px;
+    font-size: 15px;
+}
+
+.button-190x84{
+    width: 190px;
+    margin: 20px auto;
+}
+
+.button-190x84 a {
+    display: block;
+    padding: 29px 3px;
+    font-size: 15px;
+}
+
+.button-226x60{
+    width: 226px;
+    margin: 20px auto;
+}
+
+.button-226x60 a{
+    display: block;
+    font-weight: 700;
+    padding: 17px 3px;
+    font-size: 16px;
+}
+
+.button-262x52{
+    width: 262px;
+    margin: 20px auto;
+}
+
+.button-262x52 a{
+    display: block;
+    font-weight: 700;
+    padding: 17px 3px;
+    font-size: 16px;
+}
+
+.chcorange-button a {
+    background-color: #F26531;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 1px #F26531;
+}
+
+.chcorange-button a:hover {
+    color: #F26531;
+    background-color: #fff;
+}
+
+.button-375 {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    border-color: #fcb017;
+    width: 375px;
+    height: 85px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-style: solid;
+    border-width: 0px;
+    background-color: rgba(252, 176, 23, 1);
+    -webkit-box-shadow: 0px 0px 2px 0px #fff;
+    -moz-box-shadow: 0px 0px 2px 0px #fff;
+    box-shadow: 0px 0px 2px 0px #fff;
+}
+
+.button-375:hover {
+    border-color: #c1ce2f;
+    background-color: rgba(193, 206, 47, 1);
+    -webkit-box-shadow: 0px 0px 2px 0px #fff;
+    -moz-box-shadow: 0px 0px 2px 0px #fff;
+    box-shadow: 0px 0px 2px 0px #fff;
+}
+
+.supportchc #content-full {
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.post-edit{
+    display:none;
+}
+
+.admin-bar .post-edit {
+    clear: both;
+    display: block;
+    font-size: 12px;
+    margin: 1.5em 0;
+}
+
+.supportchc .program {
+    margin: 20px auto;
+    max-width:900px;
+    border: 2px solid #CCC2B6;
+    padding: 20px;
+    min-height: 220px;
+}
+
+.supportchc.tmhiprogram {
+    max-width: 900px;
+    margin: 20px auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(204, 194, 182);
+    border-image: initial;
+    padding: 20px;
+    min-height: 255px;
+}
+
+.supportchc .afprogram {
+    margin: 20px auto;
+    max-width: 900px;
+    border: 2px solid #FCAF17;
+    padding: 20px;
+    min-height: 220px;
+}
+
+.supportchc .introtext{
+   margin: 20px auto;
+   max-width:945px;
+}
+
+.supportchc .afprogram .button-177x39, .supportchc .program .button-177x39, .supportchc .tmhiprogram .button-177x39 {
+    width: 177px;
+    margin: 20px 0;
+}
+
+.supportchc .program .col-460, .supportchc .afprogram .col-460, .supportchc .tmhiprogram .col-460 {
+    font-size: 14px;
+}
+
+.afprogram .col-460 p, .program .col-460 p, .tmhiprogram .col-460 p {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.supportchc.content-photo-box.center.clear.ebcprogram {
+    margin: 20px auto;
+}
+
+.supportchc.fundraising-events {
+    margin: 0 auto;
+    max-width: 895px;
+}
+
+/***** End Support CHC ****/
+
+/***** Impact and Outcomes ****/
+
+ul.impact-outcomes-buttons {
+    margin: 0 auto;
+    clear: both;
+    display: block;
+    max-width: 980px;
+}
+
+ul.impact-outcomes-buttons li {
+    display: block;
+    float: left;
+    width: 227px;
+    margin: 20px 5px;
+}
+
+ul.impact-outcomes-buttons li a {
+    color: #333;
+    border: 1px solid #CCC2B6;
+    padding: 20px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+ul.impact-outcomes-buttons li a:hover {
+    color: #fff;
+    background-color: #CCC2B6;
+}
+
+
+.impact-outcomes-homebox{
+	max-width:944px;
+    margin: 0 auto 40px auto;
+	clear: both;
+}
+
+.impact-outcomes-homebox h2{
+    background-color: #00BCE4;
+    padding: 23px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+    margin: 0 auto;
+    line-height: 33px;
+	border-bottom: 5px #0093D0 solid;
+}
+
+.impact-outcomes-homebox p {
+    margin: 0;
+}
+
+.impactbox p {
+    max-width: 312px;
+	margin:0 auto;
+}
+
+.impact-text-large{
+	font-size:30px;
+	line-height:36px;
+	font-weight: 800;
+	color:#111111;
+}
+
+.impact-text-normal{
+	font-size:21px;
+	line-height: 25px;
+	color:#111111;
+	font-weight:300;
+}
+
+.clinicalservices-impactads {
+    background: #F06531 no-repeat right url("/wp-content/uploads/2017/12/CHC_Impact-Outcomes2017-divisionads_ClinicalServices-desktop-bkg.png");
+    width: 800px;
+    margin: 0 auto;
+    min-height: 210px;
+}
+
+.ebc-impactads {
+    background: #00bce4 no-repeat right url("/wp-content/uploads/2017/12/CHC_Impact-Outcomes2017-divisionads_EstherBClarkSchool-desktop-bkg.png");
+    width: 800px;
+    margin: 0 auto;
+    min-height: 210px;
+}
+
+.communityconnections-impactads {
+    background: #FCAF17 no-repeat right url("/wp-content/uploads/2017/12/CHC_Impact-Outcomes2017-divisionads_CommunityConnections-desktop-bkg.png");
+    width: 800px;
+    margin: 0 auto;
+    min-height: 210px;
+}
+
+.clinicalservices-impactads p {
+    padding: 52px 0 0 31px;
+    width: 375px;
+    color: white;
+    font-size: 31px;
+    line-height: 33px;
+}
+
+.ebc-impactads p {
+    padding: 20px 0 0 30px;
+    width: 375px;
+    color: white;
+    font-size: 31px;
+    line-height: 33px;
+}
+
+.communityconnections-impactads p {
+    padding: 20px 0 0 30px;
+    width: 375px;
+    color: white;
+    font-size: 29px;
+    line-height: 33px;
+}
+
+.clinicalservices-impactads span, .ebc-impactads span, .communityconnections-impactads span {
+    font-weight: 800;
+}
+
+/***** End Impact and Outcomes ****/
+
+/**** CHC Font Colors *****/
+p.chc-red, h3.chc-red, span.chc-red{
+    color: #F06531;
+}
+
+.chc-red{
+    color: #F06531;
+}
+
+.chc-gold{
+	color: #FCAF17;
+}
+
+.chc-blue{
+    color: #00bce4;
+}
+.chc-gray{
+    color: #333;
+}
+.dark-gray {
+    color: #333;
+}
+
+.chc-medium-gray{
+	color:#666666;
+}
+
+/**** End CHC Font Colors *****/
+
+/*** Open Sans Font Weights and Styles ***/
+.extra-bold{
+    font-weight:800;
+}
+
+.extra-bold-italic{
+    font-weight:800;
+    font-style:italic;
+}
+
+.bold{
+    font-weight:700;
+}
+
+.bold-italic{
+    font-weight:700;
+    font-style:italic;
+}
+
+.semi-bold{
+    font-weight:600;
+}
+
+.semi-bold-italic{
+    font-weight:600;
+    font-style:italic;
+}
+
+.regular{
+    font-weight:400;
+}
+
+.regular-italic{
+    font-weight:400;
+    font-style:italic;
+}
+
+.light{
+    font-weight:300;
+}
+
+.light-italic{
+    font-weight:300;
+    font-style:italic;
+}
+
+.font36px{
+	font-size:36px;
+}
+
+.font24px{
+	font-size:24px;
+}
+
+.font16px{
+	font-size:16px;
+}
+
+.font28px{
+	font-size:28px;
+}
+
+.font51px{
+	font-size:51px;
+}
+
+/*** End Open Sans Font Weights and Styles ***/
+
+.max897{
+	max-width:897px;
+	margin: 0 auto;
+}
+
+.max945{
+	max-width: 945px;
+	margin: 0 auto;
+}
+
+.light-brown-border{
+	border-color: #CCC2B6;
+	border-style:solid;
+	border-width:1px;
+	
+}
+
+.box-539-331{
+	min-height:539px;
+	max-width: 331px;
+}
+
+.box-539-330{
+	min-height:539px;
+	max-width: 330px;
+}
+
+.no-line-height{
+	line-height:0;
+}
+
+.literacy-intro-text .alignright{
+		margin:0;
+}
+
+#mongo-form ul {
+    list-style-type: none;
+}
+
+/* Teen Wellness */
+.btn-206-61 a {
+    display: block;
+    background-color: #FAAF34;
+    max-width: 206px;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.btn-206-61 a:hover {
+    background-color: #00bce4;
+}
+
+.sp-layer.sp-static.homeslide-rockto-background {
+    background-color: #F26531;
+}
+
+h1.sp-layer.sp-static.homeslide-rockto-heading {
+    font-size: 31px;
+    font-family: open sans;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 41px;
+	color:#fff;
+}
+
+.sp-layer.sp-static.homeslide-rockto-date {
+    font-size: 22px;
+    font-family: open sans;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 27px;
+	color:#fff;
+}
+
+p.sp-layer.sp-animated.homeslide-rockto-benefit{
+    font-size: 17px;
+    font-family: open sans;
+    font-weight: 400;
+	font-style:italic;
+    letter-spacing: 0;
+    line-height: 25px;
+	color:#fff;
+}
+
+.rocto-homeslide-button a {
+    display: block;
+    background-color: #FCAF17;
+    width: 252px;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    line-height: 45px;
+    font-weight: bold;
+	text-transform:uppercase;
+}
+
+p.sp-layer.sp-animated.homeslide-rockto-videoback {
+   background-color:#D9531E;
+}
 
 /*MOBILE LAYOUT*/
 
@@ -3018,10 +4268,34 @@ body.page-template-the-center-no-sidebar-php .bg_blue_box ul a:visited{
 	min-width:100%;
 	margin-bottom:50px;
 }
+	
+.community-ed-class-grid ul.upcoming-events li.future-event, .community-ed-class-grid ul.upcoming-events li.today {
+    float: left;
+    max-width: 100%;
+    margin: 20px;
+    list-style-type: none;
+    min-height: auto;
+}
+	
+.box-539-331, .box-539-330{
+	min-height:539px;
+	max-width: 100%;
+	clear:both;
+	margin:0 auto;
+}
+	
+.literacy-intro-text .alignright{
+		margin:auto;
 }
 
-@media screen and (max-width:1024px) {
+.literacy-course-details{
+		text-align: center;
+}
+}
 
+
+@media screen and (max-width:1024px) {
+	
 #rocktoberfest_wrapper {
 	max-width: 100%;
 	margin: auto;
@@ -3057,11 +4331,10 @@ padding: 0;
 #mainnav_home {
     background:none;
 }
-
  h1.bigheader, .post-entry h1 {
 font-size: 2.625em;
 margin-bottom: .5em;
-margin-top: 15px;
+margin-top: 0;
 color: #333;
 font-weight: 800;
 text-align: center;
@@ -3081,9 +4354,8 @@ text-align: center;
 text-align:center;
 }
 
-
-
-body.page-template-contact-us, body.page-template-get-help { /*CENTER CONTENT ON THESE PAGES FOR MOBILE*/
+body.page-template-contact-us, body.page-template-get-help { 
+/*CENTER CONTENT ON THESE PAGES FOR MOBILE*/
     text-align: center;
 }
 .video_wrapper {
@@ -3093,9 +4365,11 @@ text-align:center;
 .image-mobile-center {
     text-align: center;
 }
-img.hero { /*FOR SERVICES PAGES; SPECIALITIES; LANDING PAGES WHERE THE TOP IMAGE DROPS TOO LOW*/
+img.hero {
+/*FOR SERVICES PAGES; SPECIALITIES; LANDING PAGES WHERE THE TOP IMAGE DROPS TOO LOW*/
     margin-top:0;
 }
+
 img.alignright, img.alignleft {
     clear: both;
     float: none;
@@ -3104,11 +4378,11 @@ img.alignright, img.alignleft {
     text-align: center;
     display: block;
 }
-.col-center img {
-    display:block;
-    margin: auto;
-    text-align: center;
+
+.col-60, .col-140, .col-220, .col-300, .col-380, .col-460, .col-540, .col-620, .col-700, .col-780, .col-860 {
+width: 100%;
 }
+
 .tagline {
 clear:both;
 margin-left: 0;
@@ -3144,6 +4418,7 @@ float:none;
 div#home_slideshow {
     display: none;
 }
+
 #sidebar_left {
     display:none;
 }
@@ -3224,22 +4499,21 @@ div#sidebar_left_mobile ul li a:hover {
     text-decoration: none;
 }
 
-
 /*Secondary Nav Menus Mobile*/
 
-div#secondary_menu_wrapper_center, #secondary_menu_wrapper_sandhill, #secondary_menu_wrapper_ebc, #secondary_menu_wrapper_clinic, #secondary_menu_wrapper_adhd, #secondary_menu_wrapper_anxiety, #secondary_menu_wrapper_autism, #secondary_menu_wrapper_parented, #secondary_menu_wrapper_gethelp, #secondary_menu_wrapper_tmhi {
+div#secondary_menu_wrapper_center, #secondary_menu_wrapper_sandhill, #secondary_menu_wrapper_ebc, #secondary_menu_wrapper_clinic, #secondary_menu_wrapper_adhd, #secondary_menu_wrapper_anxiety, #secondary_menu_wrapper_autism, #secondary_menu_wrapper_parented, #secondary_menu_wrapper_gethelp, #secondary_menu_wrapper_tmhi, #secondary_menu_wrapper_breakfast {
     display: none;
 }
-div#secondary_menu_wrapper_center_mobile, #secondary_menu_wrapper_sandhill_mobile, #secondary_menu_wrapper_ebc_mobile, #secondary_menu_wrapper_clinic_mobile, #secondary_menu_wrapper_adhd_mobile, #secondary_menu_wrapper_anxiety_mobile, #secondary_menu_wrapper_autism_mobile, #secondary_menu_wrapper_parented_mobile, #secondary_menu_wrapper_gethelp_mobile, #secondary_menu_wrapper_tmhi_mobile {
+div#secondary_menu_wrapper_center_mobile, #secondary_menu_wrapper_sandhill_mobile, #secondary_menu_wrapper_ebc_mobile, #secondary_menu_wrapper_clinic_mobile, #secondary_menu_wrapper_adhd_mobile, #secondary_menu_wrapper_anxiety_mobile, #secondary_menu_wrapper_autism_mobile, #secondary_menu_wrapper_parented_mobile, #secondary_menu_wrapper_gethelp_mobile, #secondary_menu_wrapper_tmhi_mobile, #secondary_menu_wrapper_breakfast_mobile {
     display: block;    
     clear: both;
     width: 90%;
     margin: auto;
 }
-.tmhi-menu, .center-menu, .sandhill-menu, .ebc-menu, .clinic-menu, .adhd-menu, .ld-menu, .anxiety-menu, .autism-menu, .parented-menu, .get-help-menu {
+.tmhi-menu, .center-menu, .sandhill-menu, .ebc-menu, .clinic-menu, .adhd-menu, .ld-menu, .anxiety-menu, .autism-menu, .parented-menu, .get-help-menu, .breakfast-menu {
     background-color: #fff;
 }
-.tmhi-menu > li:first-child > a, .center-menu > li:first-child > a, .sandhill-menu > li:first-child > a, .ebc-menu > li:first-child > a, .clinic-menu > li:first-child > a, .adhd-menu > li:first-child > a, .ld-menu > li:first-child > a, .anxiety-menu > li:first-child > a, .autism-menu > li:first-child > a, .parented-menu > li:first-child > a, .get-help-menu > li:first-child > a  {
+.tmhi-menu > li:first-child > a, .center-menu > li:first-child > a, .sandhill-menu > li:first-child > a, .ebc-menu > li:first-child > a, .clinic-menu > li:first-child > a, .adhd-menu > li:first-child > a, .ld-menu > li:first-child > a, .anxiety-menu > li:first-child > a, .autism-menu > li:first-child > a, .parented-menu > li:first-child > a, .get-help-menu > li:first-child > a , .breakfast-menu > li:first-child > a {
     border-left: 0;
     margin-left: 0;
 }
@@ -3253,7 +4527,7 @@ div.secondary_menu .sandhill-menu .current-menu-item a {
     color: #fff;
     text-decoration: none;
 }
-div.secondary_menu .tmhi-menu .current-menu-item a , div.secondary_menu .ebc-menu .current-menu-item a {
+div.secondary_menu .tmhi-menu .current-menu-item a, div.secondary_menu .ebc-menu .current-menu-item a, div.secondary_menu .breakfast-menu .current-menu-item a  {
     background: #00BCE4;
     color: #fff;
     text-decoration: none;
@@ -3263,11 +4537,18 @@ div.secondary_menu .clinic-menu .current-menu-item a {
     color: #fff;
     text-decoration: none;
 }
-div.secondary_menu .adhd-menu .current-menu-item a, div.secondary_menu .ld-menu .current-menu-item a, div.secondary_menu .anxiety-menu .current-menu-item a, div.secondary_menu .autism-menu .current-menu-item a, div.secondary_menu .parented-menu .current-menu-item a, div.secondary_menu .get-help-menu .current-menu-item a  {
+div.secondary_menu .adhd-menu .current-menu-item a, div.secondary_menu .ld-menu .current-menu-item a, div.secondary_menu .anxiety-menu .current-menu-item a, div.secondary_menu .autism-menu .current-menu-item a, div.secondary_menu .get-help-menu .current-menu-item a {
     background: #948D7A;
     color: #fff;
     text-decoration: none;
 }
+
+div.secondary_menu .parented-menu .current-menu-item a {
+    background: #FCAF17;
+    color: #fff;
+    text-decoration: none;	
+}
+	
 .center-menu li a {
     color: #ffffff;
     font-size: 1.2em;
@@ -3292,7 +4573,7 @@ div.secondary_menu .adhd-menu .current-menu-item a, div.secondary_menu .ld-menu 
     background: #C1CD23;
     border-radius:6px;
 }
-.tmhi-menu li a, .ebc-menu li a {
+.tmhi-menu li a, .ebc-menu li a, .breakfast-menu li a {
     color: #ffffff;
     font-size: 1.2em;
     padding: 8px;
@@ -3356,13 +4637,13 @@ margin-bottom: 5px;
     background: #948D7A;
     border-radius:6px;
 }
-.tmhi-menu li a:hover, .center-menu li a:hover, .sandhill-menu li a:hover, .ebc-menu li a:hover,.clinic-menu li a:hover, .adhd-menu li a:hover, .anxiety-menu li a:hover, .ld-menu li a:hover, .autism-menu li a:hover, .parented-menu li a:hover, .gethelp-menu li a:hover, div.secondary_menu .adhd-menu .current-menu-item a:hover, div.secondary_menu .ld-menu .current-menu-item a:hover, div.secondary_menu .center-menu .current-menu-item a:hover, div.secondary_menu .anxiety-menu .current-menu-item a:hover, div.secondary_menu .autism-menu .current-menu-item a:hover,div.secondary_menu .clinic-menu .current-menu-item a:hover,div.secondary_menu .parented-menu .current-menu-item a:hover,div.secondary_menu .get-help-menu .current-menu-item a:hover {
+.tmhi-menu li a:hover, .center-menu li a:hover, .sandhill-menu li a:hover, .ebc-menu li a:hover,.clinic-menu li a:hover, .adhd-menu li a:hover, .anxiety-menu li a:hover, .ld-menu li a:hover, .autism-menu li a:hover, .parented-menu li a:hover, .gethelp-menu li a:hover, div.secondary_menu .adhd-menu .current-menu-item a:hover, div.secondary_menu .ld-menu .current-menu-item a:hover, div.secondary_menu .center-menu .current-menu-item a:hover, div.secondary_menu .anxiety-menu .current-menu-item a:hover, div.secondary_menu .autism-menu .current-menu-item a:hover,div.secondary_menu .clinic-menu .current-menu-item a:hover,div.secondary_menu .parented-menu .current-menu-item a:hover,div.secondary_menu .get-help-menu .current-menu-item a:hover,div.secondary_menu .breakfast-menu .current-menu-item a:hover {
     color: #fff;
     background: #00bbe4;
     text-decoration: none;
 }
 
-div.menu-adhd-top-menu-container, div.menu-anxiety-depression-top-menu-container, div.menu-ld-top-menu-container, div.menu-autism-top-menu-container, div.menu-parented-top-menu-container, div.menu-teen-mental-health-initiative-top-menu-container {
+div.menu-adhd-top-menu-container, div.menu-anxiety-depression-top-menu-container, div.menu-ld-top-menu-container, div.menu-autism-top-menu-container, div.menu-parented-top-menu-container {
 clear:both;
 }
 
@@ -3375,19 +4656,6 @@ text-align: center;margin: auto 0;
 margin-bottom: 10px;
 float:none;
 font-weight: 700;
-}
-
-/*Full Width Page Mobile*/
-body.page-template-full-width-page .hentry {
-    clear: both;
-    float: none;
-    width: 100%;
-    margin-left: 0;
-}
-body.page-template-full-width-page-php .post-entry {
-clear: none;
-float: left;
-margin-left: 0;
 }
 
 /*Footer Mobile*/
@@ -3425,6 +4693,7 @@ text-align: center;
 #footer .widget_nav_menu {
     margin: 0;
 }
+
 .leader {
 	text-align:center;
 }
@@ -3432,8 +4701,7 @@ text-align: center;
 #community-education-list a {
 	padding: 25px 0px;
 	margin-bottom: 5px;
-}	
-
+}
 body.page-template-community-education-nosidebar-page .col-460 {
     width: 100%;
 }
@@ -3463,28 +4731,240 @@ body.page-template-community-education-nosidebar-page .col-460 {
     float: none;
     width: 100%;
 }
+
+/* CAREERS SECTION MOBILE 960px
+-------------------------------------------------------------- */
+
+.hide_mobile {
+    display:none;
+}
+.bluebutton-905 a {
+    max-width: 429px;
+}
+
+/** Speak Mindfully **/
+
+.speakmindfully-how img.alignleft.size-full {
+    clear: none;
+    float: left;
+    margin: 0px 15px 10px 0;
+}
+
+.speakmindfully-aboutus ul {
+    margin-left: 0;
+}
+
+.speakmindfully-spreadtheword {
+    max-width: 625px;
+}
+
+.speakmindfully-spreadtheword .row2-left-poster {
+    clear: none;
+    margin: -30px 0px 0px 0px;
+}
+
+.speakmindfully-spreadtheword .row2-right-poster {
+    clear: both;
+    margin: 0 auto;
+    float: none;
+}
+
+.speakmindfully-why {
+    margin: 0 auto;
+    max-width: 620px;
+}
+
+.speakmindfully-redbox .gform_wrapper {
+    margin: 16px 0;
+    max-width: 100%;
+    float: none;
+}
+
+img.size-full.speakmindfully-pledgehand {
+    display: none;
+}
+
+.speakmindfully-redbox {
+    padding-bottom: 25px;
+}
+
+
+
+
+}
+
+@media screen and (max-width: 980px) {
+
+/* Impact and Outcomes */
+.impactbox {
+    max-width: 312px;
+	margin: 0 auto;
+}
+	
+.col-380.impactbox{
+	margin: 60px auto 0 auto;
+}
+/* End Impact and Outcomes */	
+	
+/* Support CHC */
+.supportchc .chcbreakfast, .supportchc .rocktoberfest {
+    max-width: 275px;
+    border: 1px solid #CCC2B6;
+    /*margin: 0 auto 40px auto;*/
+}
+
+.supportchc .content-photo-box {
+    clear: both;
+    float: none;
+    max-width: 90%;
+}
+
+.supportchc .afcontent-photo-box {
+    max-width: 90%;
+}
+
+.supportchc.content-photo-box.center.grid {
+    margin: 0 auto;
+    float: none;
+}
+
+ul.supportchc.buttons {
+    max-width: 95%;
+}
+
+
+.photo-content-photo-box .image {
+    float: none;
+}
+
+.supportchc .photo-content-photo-box .content {
+    float: none;
+    margin: 0 auto;
+}
+
+.supportchc .introtext {
+    padding: 20px;
+}
+
+.supportchc .program .image.grid-right, .supportchc .afprogram .image.grid-right {
+    display: none;
+}
+
+.supportchc .afprogram .button-177x39, .supportchc .program .button-177x39 {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.supportchc .program .col-460, .supportchc .afprogram .col-460, .supportchc .program .icon.grid.col-220, .supportchc .afprogram .icon.grid.col-220 {
+    text-align: center;
+}
+
+.supportchc .program, .supportchc .afprogram {
+    max-width: 80%;
+}
+
+/* End Support CHC */
 }
 
 
 @media screen and (max-width: 800px) {
+
 /*News Blog*/
 
-.category-news .rightcopy {
+.tag .rightcopy, .category-news .rightcopy {
     float: none;
     width: 100%;
     padding: 0;
 }
 
-.category-news .leftthumbnail {
+.tag .leftthumbnail, .category-news .leftthumbnail {
     float: none;
     max-width: 100%;
     margin-right: 20px;
     margin-top: 6px;
 }
 
+
 }
 
 @media screen and (max-width: 768px) {
+
+/****Impact and Outcomes ****/
+ul.impact-outcomes-buttons {
+    margin: 0 auto;
+    clear: both;
+    display: block;
+    max-width: 475px;
+    padding: 0;
+    min-height: 200px;
+}
+	 
+ul.impact-outcomes-buttons li {
+    display: block;
+    float: left;
+    width: 227px;
+    margin: 5px 5px;
+}
+	 
+.clinicalservices-impactads {
+    background: #F06531 no-repeat bottom url("http://beta.chconline.org/wp-content/uploads/2017/12/CHC_Impact-Outcomes2017-divisionads_ClinicalServices-mobile-bkg.png");
+    width: 100%;
+    margin: 0 auto;
+    min-height: 480px;
+    background-size: contain;
+}
+	
+.clinicalservices-impactads p {
+    padding: 40px 0 0 0;
+    width: 90%;
+    color: white;
+    font-size: 27px;
+    line-height: 33px;
+	margin:0 auto;
+	text-align: center;
+}
+	 
+.ebc-impactads {
+    background: #00bce4 no-repeat bottom url("/wp-content/uploads/2017/12/CHC_Impact-Outcomes2017-divisionads_EstherBClark-mobile-bkg.png");
+    width: 100%;
+    margin: 0 auto;
+    min-height: 480px;
+    background-size: contain;
+}
+	 
+.ebc-impactads p {
+    padding: 20px 0 0 0;
+    width: 90%;
+    color: white;
+    font-size: 27px;
+    line-height: 33px;
+	margin:0 auto;
+	text-align: center;
+}
+	 
+.communityconnections-impactads {
+    background: #FCAF17 no-repeat bottom url("/wp-content/uploads/2017/12/CHC_Impact-Outcomes2017-divisionads_CommunityConnections-mobile-bkg.png");
+    width: 100%;
+    margin: 0 auto;
+    min-height: 480px;
+    background-size: contain;
+}
+	
+.communityconnections-impactads p {
+    padding: 20px 0 0 0;
+    width: 90%;
+    color: white;
+    font-size: 27px;
+    line-height: 33px;
+	margin:0 auto;
+	text-align: center;
+}
+	
+.impactbox p {
+    margin: 0 auto;
+}
+	 
+/**** End Impact and Outcomes ****/
 
 .js .main-nav {
 		clear: both;
@@ -3664,7 +5144,6 @@ div#sidebar_left {
 	min-height:100%;
 }
 
-
 /*News Blog*/
 .timestamp {
 clear:both;
@@ -3710,6 +5189,11 @@ img.alignright.size-full.mobile_center {
     clear: both;
 }
 
+.supportchc .chcbreakfast, .supportchc .rocktoberfest {
+    max-width: 215px;
+    min-height: 500px;
+}	
+
 }
 
 
@@ -3720,6 +5204,41 @@ and (orientation : landscape) {
 }
 
 @media screen and (max-width: 650px) {
+
+/*****Impact and Outcomes *****/
+ul.impact-outcomes-buttons {
+    margin: 0 auto;
+    clear: both;
+    display: block;
+    max-width: 100%;
+    padding: 0;
+}
+	 
+ul.impact-outcomes-buttons li {
+    display: block;
+    float: none;
+    width: 100%;
+    margin: 12px auto;
+}
+	
+.clinicalservices-impactads {
+    min-height: 355px;
+}
+
+.ebc-impactads {
+    min-height: 385px;
+}
+	
+.communityconnections-impactads{
+	min-height: 390px;
+}
+
+/***** End Impact and Outcomes *****/	
+	
+.button-177x39 {
+    width: 90%;
+}
+
 #mainnav_home {
     background: none;
     min-height: 170px;
@@ -3729,6 +5248,33 @@ img.alignright.size-full.mobile_center {
     margin: 0 80px;
     clear: both;
 }
+
+li.grey-border-button.button-226x60.center, li.chcyellow-button.button-226x60.center, li.chcblue-button.button-226x60.center, li.lightgrey-border-button.button-226x60.center, li.lightgrey-border-button.button-180x60.center, li.chcyellow-button.button-180x60.center, li.chcblue-button.button-180x60.center, li.lightgrey-border-button.button-180x84.center, li.chcyellow-button.button-180x84.center, li.chcblue-button.button-180x84.center, li.lightgrey-border-button.button-190x84.center, li.chcyellow-button.button-190x84.center, li.chcblue-button.button-190x84.center, li.lightgrey-border-button.button-190x60.center, li.chcyellow-button.button-190x60.center, li.chcblue-button.button-190x60.center  {
+    float: none;
+    margin: 10px auto;
+    width: 95%;
+}
+
+ul.supportchc.buttons {
+    max-width: 100%;
+}
+
+.content-photo-box .content, .afcontent-photo-box .content {
+    max-width: 100%;
+    float: none;
+    padding-bottom:20px;
+}
+
+.supportchc .chcbreakfast, .supportchc .rocktoberfest {
+    max-width: 275px;
+	margin: 0 auto 40px auto;
+    float:none;
+}
+
+.content-photo-box .image, .afcontent-photo-box .image {
+    display: none;
+}
+
 
 }
 
@@ -3748,8 +5294,23 @@ body.page-template-the-center-no-sidebar-php .bg_white_box h2 {
     text-align: center;
 }
 
+/** Speak Mindfully **/
+
+.speakmindfully-redbox .gform_wrapper .field_description_below .gfield_description {
+    margin: 0px 0 60px 0;
+}
+
+.speakmindfully-spreadtheword, .speakmindfully-why {
+    max-width: 320px;
+}
+
+.speakmindfully-how img.alignleft.size-full {
+    padding-left: 10px;
+}
+
 }
 
 @media screen and (max-width: 320px) {
 
 }
+
